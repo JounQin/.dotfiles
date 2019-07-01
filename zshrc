@@ -68,7 +68,7 @@ ZSH_THEME="apple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump common-aliases command-not-found copydir copyfile dash docker emoji git git-auto-fetch gitfast git-flow github git-hubflow gitignore git-remote-branch go golang history iterm2 jira jump kubectl ng node npm npx osx redis-cli safe-paste sudo thefuck vscode yarn z zsh-navigation-tools zsh_reload zsh-syntax-highlighting)
+plugins=(autojump common-aliases command-not-found copydir copyfile dash docker emoji git git-auto-fetch gitfast git-flow github git-hubflow gitignore git-remote-branch go golang history iterm2 jira jump kubectl ng node npm osx redis-cli safe-paste sudo thefuck vscode yarn z zsh-navigation-tools zsh_reload zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
