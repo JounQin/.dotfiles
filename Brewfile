@@ -5,8 +5,10 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "thoughtbot/formulae"
 brew "autojump"
+brew "git"
 brew "gnupg"
 brew "go"
+brew "kubernetes-cli"
 brew "mas"
 brew "nginx"
 brew "node"
@@ -17,6 +19,7 @@ brew "thoughtbot/formulae/rcm"
 cask "docker"
 cask "font-fira-code"
 cask "java"
+mas "iHosts", id: 1102004240
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ音乐", id: 595615424
