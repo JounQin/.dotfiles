@@ -1,4 +1,10 @@
+if [ ! -x "$(command -v brew)" ]; then
+  echo "Installing Homebrew..."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 if [ ! -d "$ZSH" ]; then
+  echo "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
@@ -70,7 +76,7 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+zplug "zplug/zplug", hook-build:"zplug --self-manage"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -82,11 +88,14 @@ fi
 zplug load
 # zplug end
 
-#command-not-found
+# command-not-found
 if brew command command-not-found-init > /dev/null 2>&1;
   then eval "$(brew command-not-found-init)";
 fi
 
-# proxy list
-alias proxy='export all_proxy=socks5://127.0.0.1:1086'
-alias unproxy='unset all_proxy'
+# aliases
+alias proxy="export all_proxy=socks5://127.0.0.1:1086"
+alias unproxy="unset all_proxy"
+
+# exports
+export EDITOR=code
