@@ -53,8 +53,8 @@ plugins=(
           please
           profiles
           safe-paste
-          sudo
           thefuck
+          sudo
           urltools
           vscode
           yarn
