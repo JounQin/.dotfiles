@@ -1,3 +1,7 @@
+if [ ! -d "$ZSH" ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
 # oh-my-zsh start
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
@@ -12,26 +16,45 @@ plugins=(
           dash
           docker
           docker-compose
+          docker-machine
+          dotenv
           emoji
+          emotty
+          encode64
+          extract
+          fd
+          frontend-search
           git
-          gitfast
+          git-auto-fetch
+          git-extras
           git-flow
+          git-prompt
+          git-remote-branch
+          gitfast
           gitignore
           golang
           history
           iterm2
           jira
+          jsontools
           kubectl
+          magic-enter
+          man
           ng
           node
           npm
           osx
+          please
+          profiles
           safe-paste
           sudo
           thefuck
+          urltools
           vscode
           yarn
           z
+          zsh-navigation-tools
+          zsh_reload
         )
 
 source $ZSH/oh-my-zsh.sh
