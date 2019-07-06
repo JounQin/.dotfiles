@@ -34,9 +34,11 @@ plugins=(
           git-auto-fetch
           git-extras
           git-flow
+          git-hubflow
           git-prompt
           git-remote-branch
           gitfast
+          github
           gitignore
           golang
           history
