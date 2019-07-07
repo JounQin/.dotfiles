@@ -96,6 +96,7 @@ if brew command command-not-found-init > /dev/null 2>&1;
 fi
 
 # aliases
+alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
 alias proxy="export all_proxy=socks5://127.0.0.1:1086"
 alias unproxy="unset all_proxy"
 

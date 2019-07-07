@@ -27,6 +27,7 @@ cask "dash"
 cask "docker"
 cask "font-fira-code"
 cask "java"
+cask "switchhosts"
 mas "iHosts", id: 1102004240
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668

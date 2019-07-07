@@ -6,3 +6,4 @@ email = admin@1stg.me
 	signingkey = 0BC0B62F2E603198
 [core]
 	excludesfile = ~/.gitignore
+	gitproxy = "~/.gitproxy for github.com"

@@ -1,0 +1,14 @@
+{
+  "list": [{
+    "id": "1562431792757-493321",
+    "title": "DEV",
+    "content": "##\n# Host Database\n#\n# localhost is used to configure the loopback interface\n# when the system is booting.  Do not change this entry.\n##\n127.0.0.1\tlocalhost\n255.255.255.255\tbroadcasthost\n::1             localhost\n127.0.0.1\tlocal.1stg.me\n",
+    "on": true,
+    "where": "local",
+    "url": "",
+    "last_refresh": null,
+    "refresh_interval": 0,
+    "include": []
+  }],
+  "version": [3, 3, 12, 5349]
+}
