@@ -1,16 +1,18 @@
+# check brew installation
 if [ ! -x "$(command -v brew)" ]; then
   echo "Installing Homebrew..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-if [ ! -d "$ZSH" ]; then
-  echo "Installing Oh My Zsh..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
-
 # oh-my-zsh start
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
+
+## check Oh-My-Zsh installation
+if [ ! -d "$ZSH" ]; then
+  echo "Installing Oh-My-Zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 ZSH_THEME="apple"
 
