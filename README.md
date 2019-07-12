@@ -6,7 +6,7 @@ Personal but sharable .dotfiles managed by `rcm`.
 
 ```sh
 cd # enter user home directory
-git clone git@github.com:JounQin/.dotfiles.git
+git clone https://github.com/JounQin/.dotfiles.git
 cd .dotfiles
 bash init.sh
 
