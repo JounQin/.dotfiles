@@ -14,8 +14,6 @@ if [ ! -d "$ZSH" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-ZSH_THEME="apple"
-
 plugins=(
           common-aliases
           command-not-found
@@ -75,11 +73,16 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 
 source $ZPLUG_HOME/init.zsh
 
+## themes
+zplug 'denysdovhan/spaceship-prompt', as:theme
+
+## plugins
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
+## manage zplug itself
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
 
 if ! zplug check --verbose; then
