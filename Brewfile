@@ -54,7 +54,8 @@ cask "unlox"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "zeplin"
-mas "iHosts", id: 1102004240
+mas "iPic", id: 1101244278
+mas "iTimer", id: 1062139745
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328

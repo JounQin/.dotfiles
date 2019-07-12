@@ -1,7 +1,8 @@
-# check brew installation
+# check Homebrew installation
 if [ ! -x "$(command -v brew)" ]; then
   echo "Installing Homebrew..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew bundle
 fi
 
 # oh-my-zsh start
@@ -62,7 +63,6 @@ plugins=(
           yarn
           z
           zsh-navigation-tools
-          zsh_reload
         )
 
 source $ZSH/oh-my-zsh.sh
@@ -74,7 +74,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 ## themes
-zplug 'denysdovhan/spaceship-prompt', as:theme
+zplug "denysdovhan/spaceship-prompt", as:theme
 
 ## plugins
 zplug "zsh-users/zsh-autosuggestions"
@@ -102,8 +102,12 @@ fi
 
 # aliases
 alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
-alias proxy="export all_proxy=socks5://127.0.0.1:1086"
-alias unproxy="unset all_proxy"
+alias proxy="export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086"
+alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
+
+## proxy by default
+proxy
 
 # exports
+export PATH="/usr/local/sbin:$PATH"
 export EDITOR=code
