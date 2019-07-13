@@ -4,5 +4,6 @@ script:
   - set -e
   - yes | bash ./setup.sh
   - zsh
-
-after_script: yes | sudo -s
+  - yes | sudo -s
+  - sleep 5
+  - exit 0

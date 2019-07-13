@@ -64,8 +64,17 @@ then
 fi
 
 echo "Excusing \`brew bundle\` to install packages and apps."
-echo "${BLUE}It may take some time until finishing at first time, please be a bit patience...${RESET}"
-brew bundle
+
+execBrewBundle() {
+  echo "${BLUE}It may take some time until finishing at first time, please be a bit patience...${RESET}"
+  brew bundle
+}
+
+execBrewBundle || {
+  echo "${YELLOW}Trying to update brew first.${RESET}"
+  brew update
+  execBrewBundle
+}
 
 echo "Setting up rcm..."
 rcup SwitchHosts gitconfig gitignore gitproxy zshrc
