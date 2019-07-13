@@ -37,9 +37,9 @@ And [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) bundles them 
 
 Useful commands:
 
-- Run `brew bundle dump` to generate a file named `Brewfile` according to your installed taps, packages and apps, just change it as you wish.
+- Run `brew bundle dump` to generate a file named `Brewfile` according to your installed taps, packages and apps.
 
-- Run `brew bundle` to check and install packages and apps according to `Brewfile`.
+- Run `brew bundle` to check and install packages and apps via `Brewfile`, just change it as you wish.
 
   You may need to move the apps which are not managed by `brew cask` or `mas` to trash.
 
@@ -56,8 +56,8 @@ Just change file `zshrc` if you want to modify the zsh plugins, theme, aliases o
 
 ### Proxy
 
-It is assumed that you're using SSR to across THE GREAT FIREWALL, so proxies for Terminal and git are set automatically.
-You can safely modify or remove the alias `proxy` in `zshrc`.
+It is assumed that you're using [SSR](https://github.com/qinyuhang/ShadowsocksX-NG-R) to across THE GREAT FIREWALL, so proxies for Terminal and git are set automatically.
+You can safely modify or remove the alias `proxy` in `zshrc` and the file `gitproxy`.
 
 ## Notable plugins and apps
 

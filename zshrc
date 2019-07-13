@@ -16,54 +16,54 @@ if [ ! -d "$ZSH" ]; then
 fi
 
 plugins=(
-          common-aliases
-          command-not-found
-          copydir
-          copyfile
-          dash
-          docker
-          docker-compose
-          docker-machine
-          dotenv
-          emoji
-          emotty
-          encode64
-          extract
-          fd
-          frontend-search
-          git
-          git-auto-fetch
-          git-extras
-          git-flow
-          git-hubflow
-          git-prompt
-          git-remote-branch
-          gitfast
-          github
-          gitignore
-          golang
-          history
-          iterm2
-          jira
-          jsontools
-          kubectl
-          magic-enter
-          man
-          ng
-          node
-          npm
-          osx
-          please
-          profiles
-          safe-paste
-          thefuck
-          sudo
-          urltools
-          vscode
-          yarn
-          z
-          zsh-navigation-tools
-        )
+  common-aliases
+  command-not-found
+  copydir
+  copyfile
+  dash
+  docker
+  docker-compose
+  docker-machine
+  dotenv
+  emoji
+  emotty
+  encode64
+  extract
+  fd
+  frontend-search
+  git
+  git-auto-fetch
+  git-extras
+  git-flow
+  git-hubflow
+  git-prompt
+  git-remote-branch
+  gitfast
+  github
+  gitignore
+  golang
+  history
+  iterm2
+  jira
+  jsontools
+  kubectl
+  magic-enter
+  man
+  ng
+  node
+  npm
+  osx
+  please
+  profiles
+  safe-paste
+  thefuck
+  sudo
+  urltools
+  vscode
+  yarn
+  z
+  zsh-navigation-tools
+)
 
 source $ZSH/oh-my-zsh.sh
 # oh-my-zsh end
@@ -74,7 +74,35 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 ## themes
+
+### spaceship start
+SPACESHIP_PROMPT_ORDER=(
+  package
+  node
+  golang
+  docker
+  kubecontext
+  exec_time
+  jobs
+  line_sep
+  dir
+  git
+  char
+)
+
+SPACESHIP_RPROMPT_ORDER=(
+  user
+  host
+  time
+  battery
+)
+
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_BATTERY_SHOW=always
+SPACESHIP_TIME_SHOW=true
+
 zplug "denysdovhan/spaceship-prompt", as:theme
+### spaceship end
 
 ## plugins
 zplug "zsh-users/zsh-autosuggestions"

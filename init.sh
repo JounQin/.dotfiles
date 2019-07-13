@@ -36,7 +36,8 @@ if read -t 5 -p "Copy or overwrite \`~/.zshrc\`? [y/N]: " answer; then
   fi
 else
   echo
-  echo "skip automatically..."
+  echo "Exit automatically due to timeout..."
+  exit 0
 fi
 
 echo "${RED}Homebrew, Oh-My-Zsh, zplug and related apps and plugins will be installed automatically if not detected.${RESET}"
