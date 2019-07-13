@@ -1,8 +1,17 @@
 os: osx
 
+osx_image: xcode9.2
+
+cache:
+  directories:
+    - /usr/local/Homebrew
+    - /usr/local/Cellar
+
 script:
-  - set -e
   - yes | bash ./setup.sh
+  - zplug install
+
+after_script:
   - zsh
   - yes | sudo -s
   - sleep 5

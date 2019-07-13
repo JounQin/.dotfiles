@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 command_exists() {
 	command -v "$@" >/dev/null 2>&1
 }
@@ -63,17 +65,23 @@ then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-echo "Excusing \`brew bundle\` to install packages and apps."
-
 execBrewBundle() {
-  echo "${BLUE}It may take some time until finishing at first time, please be a bit patience...${RESET}"
+  echo "Executing \`brew bundle\` to install packages and apps."
+  echo "${BLUE}It may take some time until finishing at the first time, please be a bit patience...${RESET}"
+  if [ "true" == "$CI" ]
+  then
+    brew update
+    mas signin "$EMAIL" "$PASSWORD"
+  fi
   brew bundle
 }
 
 execBrewBundle || {
-  echo "${YELLOW}Trying to update brew first.${RESET}"
-  brew update
-  execBrewBundle
+  echo "${YELLOW}Error occurred, retrying.${RESET}"
+  execBrewBundle || {
+    echo "${RED}Retried but failed, exiting...${RESET}"
+    exit 1
+  }
 }
 
 echo "Setting up rcm..."
