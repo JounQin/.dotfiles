@@ -1,19 +1,6 @@
-# check Homebrew installation
-if [ ! -x "$(command -v brew)" ]; then
-  echo "Installing Homebrew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew bundle
-fi
-
 # oh-my-zsh start
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
-
-## check Oh-My-Zsh installation
-if [ ! -d "$ZSH" ]; then
-  echo "Installing Oh-My-Zsh..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
 
 plugins=(
   common-aliases
@@ -63,6 +50,7 @@ plugins=(
   yarn
   z
   zsh-navigation-tools
+  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -73,7 +61,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 
 source $ZPLUG_HOME/init.zsh
 
-## themes
+## theme
 
 ### spaceship start
 SPACESHIP_PROMPT_ORDER=(
@@ -113,18 +101,21 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 ## manage zplug itself
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
 
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+if ! zplug check --verbose
+then
+  printf "Install? [y/N]: "
+  if read -q
+  then
+    echo
+    zplug install
+  fi
 fi
 
 zplug load
 # zplug end
 
 # command-not-found
-if brew command command-not-found-init > /dev/null 2>&1;
+if brew command command-not-found-init > /dev/null 2>&1
   then eval "$(brew command-not-found-init)";
 fi
 
@@ -134,7 +125,9 @@ alias proxy="export https_proxy=http://127.0.0.1:1087;export http_proxy=http://1
 alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
 
 ## proxy by default
-proxy
+if [ "true" != "$CI" ]
+then proxy
+fi
 
 # exports
 export PATH="/usr/local/sbin:$PATH"

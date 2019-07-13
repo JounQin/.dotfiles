@@ -1,0 +1,8 @@
+os: osx
+
+script:
+  - set -e
+  - yes | bash ./setup.sh
+  - zsh
+
+after_script: yes | sudo -s

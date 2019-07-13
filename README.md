@@ -5,13 +5,8 @@ Personal but sharable .dotfiles managed by `rcm`.
 ## Usage
 
 ```sh
-cd # enter user home directory
-git clone https://github.com/JounQin/.dotfiles.git
-cd .dotfiles
-bash init.sh
-
-# running following command after the previous one finished
-bash setup.sh
+git clone https://github.com/JounQin/.dotfiles.git ~/.dotfiles
+bash ~/.dotfiles/setup.sh
 ```
 
 ## Explanation
