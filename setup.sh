@@ -80,7 +80,8 @@ execBrewBundle() {
   if [ "true" == "$CI" ]
   then
     brew update
-    export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
+    export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | awk '{$0=q $0 q; gsub(ORS,OFS)}1' q=\' RS= OFS="' '")
+    export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | awk '{$0=q $0 q; gsub(ORS,OFS)}1' q=\' RS= OFS="' '")
   fi
   brew bundle
 }
