@@ -84,8 +84,8 @@ execBrewBundle() {
     then
       export HOMEBREW_BUNDLE_BREW_SKIP=mas
       export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
-      export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
     fi
+    export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
   fi
   brew bundle
 }

@@ -19,5 +19,3 @@ matrix:
 script:
   - set -e
   - yes | bash ./setup.sh
-
-after_success: zsh
