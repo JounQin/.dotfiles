@@ -89,22 +89,22 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_BATTERY_SHOW=always
 SPACESHIP_TIME_SHOW=true
 
-zplug "denysdovhan/spaceship-prompt", as:theme
+zplug denysdovhan/spaceship-prompt, as:theme
 ### spaceship end
 
 ## plugins
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug zdharma/fast-syntax-highlighting
+zplug zsh-users/zsh-autosuggestions
+zplug zsh-users/zsh-completions
+zplug zsh-users/zsh-history-substring-search
 
 ## manage zplug itself
-zplug "zplug/zplug", hook-build:"zplug --self-manage"
+zplug zplug/zplug, hook-build:"zplug --self-manage"
 
 if ! zplug check --verbose
 then
   printf "Install? [y/N]: "
-  if read -t 5 -q
+  if read -q
   then
     echo
     zplug install
