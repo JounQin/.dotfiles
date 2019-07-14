@@ -80,9 +80,12 @@ execBrewBundle() {
   if [ "true" == "$CI" ]
   then
     brew update
-    export HOMEBREW_BUNDLE_BREW_SKIP=mas
-    export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
-    export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
+    if [[ "$OSTYPE" != "darwin"* ]]
+    then
+      export HOMEBREW_BUNDLE_BREW_SKIP=mas
+      export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
+      export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
+    fi
   fi
   brew bundle
 }

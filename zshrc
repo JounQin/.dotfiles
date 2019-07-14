@@ -104,7 +104,7 @@ zplug "zplug/zplug", hook-build:"zplug --self-manage"
 if ! zplug check --verbose
 then
   printf "Install? [y/N]: "
-  if read -q
+  if read -t 5 -q
   then
     echo
     zplug install

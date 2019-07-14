@@ -19,4 +19,5 @@ matrix:
 script:
   - set -e
   - yes | bash ./setup.sh
-  - zplug install
+
+after_success: zsh
