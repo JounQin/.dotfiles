@@ -26,6 +26,20 @@ setup_color() {
 
 setup_color
 
+echo "${RED}Homebrew, Zsh, Oh-My-Zsh, zplug and related apps and plugins will be installed automatically if not detected.${RESET}"
+
+# check Homebrew installation
+if [ ! -x "$(command -v brew)" ]
+then
+  echo "Installing Homebrew..."
+  if [[ "$OSTYPE" == "darwin"* ]]
+  then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  else
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+    brew install zsh
+  fi
+fi
+
 if ! command_exists zsh
 then
   echo "${YELLOW}Zsh is not installed.${RESET} Please install zsh first."
@@ -47,15 +61,6 @@ else
     echo "Exit automatically due to timeout..."
     exit 0
   fi
-fi
-
-echo "${RED}Homebrew, Oh-My-Zsh, zplug and related apps and plugins will be installed automatically if not detected.${RESET}"
-
-# check Homebrew installation
-if [ ! -x "$(command -v brew)" ]
-then
-  echo "Installing Homebrew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 ## check Oh-My-Zsh installation

@@ -1,6 +1,9 @@
-os: osx
+os:
+  - linux
+  - osx
 
-osx_image: xcode9.2
+env:
+  - HOMEBREW_BUNDLE_MAS_SKIP=true
 
 cache:
   directories:
@@ -10,9 +13,3 @@ cache:
 script:
   - yes | bash ./setup.sh
   - zplug install
-
-after_script:
-  - zsh
-  - yes | sudo -s
-  - sleep 5
-  - exit 0
