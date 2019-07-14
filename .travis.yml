@@ -1,15 +1,22 @@
-os:
-  - linux
-  - osx
+language: sh
 
-env:
-  - HOMEBREW_BUNDLE_MAS_SKIP=true
-
-cache:
-  directories:
-    - /usr/local/Homebrew
-    - /usr/local/Cellar
+matrix:
+  include:
+    - os: linux
+      cache:
+        directories:
+          - /home/travis/.cache/Homebrew/
+          - /home/linuxbrew/.linuxbrew/Homebrew
+          - /home/linuxbrew/.linuxbrew/Cellar
+      before_install:
+        sudo apt-get install build-essential curl file git
+    - os: osx
+      cache:
+        directories:
+          - /usr/local/Homebrew
+          - /usr/local/Cellar
 
 script:
+  - set -e
   - yes | bash ./setup.sh
   - zplug install
