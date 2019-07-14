@@ -65,7 +65,6 @@ mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328
 mas "QQ音乐", id: 595615424
 mas "SPlayer", id: 414675434
-mas "Telegram Desktop", id: 946399090
 mas "Xcode", id: 497799835
 mas "企业微信", id: 1189898970
 mas "印象笔记", id: 1356055347

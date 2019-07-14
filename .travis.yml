@@ -10,8 +10,6 @@ matrix:
           - /home/linuxbrew/.linuxbrew/Cellar
       before_install:
         sudo apt-get install build-essential curl file git
-      after_success:
-        brew cask install docker font-fira-code google-chrome java postman switchhosts visual-studio-code
     - os: osx
       cache:
         directories:
