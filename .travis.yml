@@ -6,15 +6,15 @@ matrix:
       cache:
         directories:
           - /home/travis/.cache/Homebrew
-          - /home/linuxbrew/.linuxbrew/Homebrew
-          - /home/linuxbrew/.linuxbrew/Cellar
+          - /home/linuxbrew/.linuxbrew
       before_install:
-        sudo apt-get install build-essential curl file git
+        sudo apt-get install build-essential
     - os: osx
       cache:
         directories:
           - /usr/local/Homebrew
           - /usr/local/Cellar
+          - /usr/local/Caskroom
 
 script:
   - set -e

@@ -1,4 +1,4 @@
-# .dotfiles
+# .dotfiles [![Build Status](https://travis-ci.com/JounQin/.dotfiles.svg?branch=master)](https://travis-ci.com/JounQin/.dotfiles)
 
 Personal but sharable .dotfiles managed by `rcm`.
 

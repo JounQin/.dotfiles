@@ -44,10 +44,11 @@ then
   fi
 fi
 
-if ! command_exists zsh
+## check Oh-My-Zsh installation
+if [ ! -d "$ZSH" ]
 then
-  echo "${YELLOW}Zsh is not installed.${RESET} Please install zsh first."
-  exit 1
+  echo "Installing Oh-My-Zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 if [ "true" == "$CI" ]
@@ -58,20 +59,13 @@ else
   if read -t 5 -p "Copy or overwrite \`~/.zshrc\`? [y/N]: " -n 1 -r
   then
     if [[ $REPLY =~ ^[Yy]$ ]]
-      then \cp -f zshrc $HOME/.zshrc
+    then \cp -f zshrc $HOME/.zshrc
     fi
   else
     echo
     echo "Exit automatically due to timeout..."
     exit 0
   fi
-fi
-
-## check Oh-My-Zsh installation
-if [ ! -d "$ZSH" ]
-then
-  echo "Installing Oh-My-Zsh..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 execBrewBundle() {
