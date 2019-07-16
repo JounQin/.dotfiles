@@ -26,10 +26,10 @@ setup_color() {
 
 setup_color
 
-echo "${RED}Homebrew, Zsh, Oh-My-Zsh, zplug and related apps and plugins will be installed automatically if not detected.${RESET}"
+echo "${RED}Homebrew, Zsh, Oh-My-Zsh, zplugin and related apps and plugins will be installed automatically if not detected.${RESET}"
 
 # check Homebrew installation
-if [ ! -x "$(command -v brew)" ]
+if ! command_exists brew
 then
   echo "Installing Homebrew..."
   if [[ "$OSTYPE" == "darwin"* ]]
@@ -49,6 +49,11 @@ if [ ! -d "$ZSH" ]
 then
   echo "Installing Oh-My-Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
+## check zplugin installation
+if ! command_exists zplugin
+then sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 fi
 
 if [ "true" == "$CI" ]

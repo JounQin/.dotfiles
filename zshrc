@@ -1,3 +1,13 @@
+# aliases
+alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+alias proxy="export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086"
+alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
+
+## proxy by default
+if [ "true" != "$CI" ]
+then proxy
+fi
+
 # oh-my-zsh start
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
@@ -56,10 +66,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 # oh-my-zsh end
 
-# zplug start
-export ZPLUG_HOME=/usr/local/opt/zplug
-
-source $ZPLUG_HOME/init.zsh
+# zplugin start
+source $HOME/.zplugin/bin/zplugin.zsh
 
 ## theme
 
@@ -89,46 +97,25 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_BATTERY_SHOW=always
 SPACESHIP_TIME_SHOW=true
 
-zplug denysdovhan/spaceship-prompt, as:theme
+zplugin light denysdovhan/spaceship-prompt
 ### spaceship end
 
 ## plugins
-zplug zdharma/fast-syntax-highlighting
-zplug zsh-users/zsh-autosuggestions
-zplug zsh-users/zsh-completions
-zplug zsh-users/zsh-history-substring-search
+zplugin light zdharma/history-search-multi-word
+zplugin light zdharma/fast-syntax-highlighting
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-completions
+zplugin light zsh-users/zsh-history-substring-search
 
-## manage zplug itself
-zplug zplug/zplug, hook-build:"zplug --self-manage"
-
-if ! zplug check --verbose
-then
-  printf "Install? [y/N]: "
-  if read -q
-  then
-    echo
-    zplug install
-  fi
-fi
-
-zplug load
-# zplug end
+# zplugin end
 
 # command-not-found
 if brew command command-not-found-init > /dev/null 2>&1
 then eval "$(brew command-not-found-init)"
 fi
 
-# aliases
-alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
-alias proxy="export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086"
-alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
-
-## proxy by default
-if [ "true" != "$CI" ]
-then proxy
-fi
-
 # exports
-export PATH="/usr/local/sbin:$PATH"
 export EDITOR=code
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export PATH="/usr/local/sbin:$PATH"
