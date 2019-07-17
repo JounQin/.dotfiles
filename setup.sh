@@ -103,8 +103,8 @@ echo "Setting up rcm..."
 rcup  brew-aliases SwitchHosts gitconfig gitignore gitproxy zshrc
 
 echo "Symlinking VSCode workspaces..."
-ln -sf ~/.dotfiles/Workspace/Alauda/Alauda.code-workspace ~/Workspace/Alauda
-ln -sf ~/.dotfiles/Workspace/GitHub/GitHub.code-workspace ~/Workspace/GitHub
+ln -sf ~/.dotfiles/Workspaces/Alauda.code-workspace ~/Workspaces
+ln -sf ~/.dotfiles/Workspaces/GitHub.code-workspace ~/Workspaces
 
 echo -e "${GREEN}\xf0\x9f\x8e\x89 Congratulations, you have finished setting up!${RESET}"
 
