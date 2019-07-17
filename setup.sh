@@ -26,7 +26,7 @@ setup_color() {
 
 setup_color
 
-echo "${RED}Homebrew, Zsh, Oh-My-Zsh, zplugin and related apps and plugins will be installed automatically if not detected.${RESET}"
+echo "${RED}Homebrew, Zsh, Oh-My-Zsh, Zplugin and related apps and plugins will be installed automatically if not detected.${RESET}"
 
 # check Homebrew installation
 if ! command_exists brew
@@ -45,15 +45,17 @@ then
 fi
 
 ## check Oh-My-Zsh installation
-if [ ! -d "$ZSH" ]
+if [ ! -d "$HOME/.oh-my-zsh" ]
 then
   echo "Installing Oh-My-Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-## check zplugin installation
-if ! command_exists zplugin
-then sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+## check Zplugin installation
+if [ ! -d "$HOME/.zplugin" ]
+then
+  echo "Installing Zplugin..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 fi
 
 if [ "true" == "$CI" ]
@@ -98,12 +100,13 @@ execBrewBundle || {
 }
 
 echo "Setting up rcm..."
-rcup SwitchHosts gitconfig gitignore gitproxy zshrc
+rcup  brew-aliases SwitchHosts gitconfig gitignore gitproxy zshrc
+
+echo "Symlinking VSCode workspaces..."
+ln -sf ~/.dotfiles/Workspace/Alauda/Alauda.code-workspace ~/Workspace/Alauda
+ln -sf ~/.dotfiles/Workspace/GitHub/GitHub.code-workspace ~/Workspace/GitHub
 
 echo -e "${GREEN}\xf0\x9f\x8e\x89 Congratulations, you have finished setting up!${RESET}"
 
-if [ "true" != "$CI" ]
-then
-  echo "${BLUE}Toggling to zsh.${RESET}"
-  zsh
-fi
+echo "${BLUE}Toggling to zsh.${RESET}"
+exec zsh

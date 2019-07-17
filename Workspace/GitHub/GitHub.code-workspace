@@ -1,0 +1,18 @@
+{
+	"folders": [
+    {
+      "name": ".dotfiles",
+      "path": "/Users/JounQin/.dotfiles"
+    },
+    {
+      "path": "/Users/JounQin/Workspace/GitHub/flutter-study"
+    },
+    {
+      "name": "ngrx",
+      "path": "/Users/JounQin/Workspace/GitHub/ngrx"
+    }
+  ],
+	"settings": {
+		"jira-plugin.workingProject": ""
+	}
+}

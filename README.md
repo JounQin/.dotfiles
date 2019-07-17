@@ -17,13 +17,15 @@ bash ~/.dotfiles/setup.sh
 
 Useful commands:
 
-- Run `rcup ${FILE_NAME}` to install the file to be a dotfile.
-  For example: run `rcup zshrc` then it will add a symlink at `~/.zshrc`.
+- [rcup] is the main program. It is used to install and update dotfiles, with support for tags, host-specific files, and multiple source directories.
+- [rcdn] is the opposite of [rcup].
+- [mkrc][mkrc] is for introducing a dotfile into your dotfiles directory, with support for tags and multiple source directories.
+- [lsrc] shows you all your dotfiles and where they would be symlinked to. It is used by [rcup] but is provided for your own use, too.
 
-- Run `rcdn ${DOTFILE_NAME}` to mv the dotfile into this folder, and re-symlink it with the moved file.
-  For example: run `rcdn ~/.zshrc` then it will be moved to `./zshrc` and itself will become a symlink targeting `./zshrc`.
-
-- Run `lsrc` will show you all your dotfiles and where they are symlinked to.
+[rcup]: http://thoughtbot.github.io/rcm/rcup.1.html
+[mkrc]: http://thoughtbot.github.io/rcm/mkrc.1.html
+[rcdn]: http://thoughtbot.github.io/rcm/rcdn.1.html
+[lsrc]: http://thoughtbot.github.io/rcm/lsrc.1.html
 
 ### Homebrew
 
@@ -40,9 +42,9 @@ Useful commands:
 
   _AND_ do not delete any of your app data, be careful!
 
-### zplugin and Oh-My-Zsh
+### Zplugin and Oh-My-Zsh
 
-[zplugin](https://github.com/zdharma/zplugin) is a `Flexible Zsh plugin manager with clean fpath, reports, completion management, turbo mode, services`, and [Oh My Zsh](https://ohmyz.sh) is a `framework for managing your` [zsh](https://www.zsh.org) `configuration`,
+[Zplugin](https://github.com/zdharma/zplugin) is a `Flexible Zsh plugin manager with clean fpath, reports, completion management, turbo mode, services`, and [Oh My Zsh](https://ohmyz.sh) is a `framework for managing your` [zsh](https://www.zsh.org) `configuration`,
 they are used to make our terminal more beautiful and productive.
 
 I was always using official `apple` theme before I meet [spaceship](https://github.com/denysdovhan/spaceship-prompt).

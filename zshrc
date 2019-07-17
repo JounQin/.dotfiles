@@ -120,3 +120,4 @@ export FLUTTER_HOME=/usr/local/opt/flutter
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export PATH="/usr/local/sbin:$FLUTTER_HOME/bin:$PATH"
+export SHELL=/usr/local/bin/zsh
