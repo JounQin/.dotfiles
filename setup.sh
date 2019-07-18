@@ -81,8 +81,9 @@ execBrewBundle() {
   if [ "true" == "$CI" ]
   then
     brew update
-    if [[ "$OSTYPE" != "darwin"* ]]
-    then
+    if [[ "$OSTYPE" == "darwin"* ]]
+    then brew cask install font-fira-code --force --verbose --debug
+    else
       export HOMEBREW_BUNDLE_BREW_SKIP="ios-deploy mas"
       export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
     fi
