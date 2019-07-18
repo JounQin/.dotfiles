@@ -117,7 +117,11 @@ fi
 # exports
 export EDITOR=code
 export FLUTTER_HOME=/usr/local/opt/flutter
+export RUBY_HOME=/usr/local/opt/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export PATH="/usr/local/sbin:$FLUTTER_HOME/bin:$PATH"
+export CPPFLAGS="-I$RUBY_HOME/include"
+export LDFLAGS="-L$RUBY_HOME/lib"
+export PKG_CONFIG_PATH="$RUBY_HOME/lib/pkgconfig"
+export PATH="/usr/local/sbin:$FLUTTER_HOME/bin:$RUBY_HOME/bin:$PATH"
 export SHELL=/usr/local/bin/zsh
