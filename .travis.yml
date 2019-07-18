@@ -9,8 +9,6 @@ matrix:
           - /home/linuxbrew/.linuxbrew
       before_install:
         - sudo apt-get install build-essential
-        - gem update --system
-        - gem install nokogiri
     - os: osx
       cache:
         directories:
