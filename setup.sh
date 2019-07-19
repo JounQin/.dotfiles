@@ -109,7 +109,7 @@ ln -sf ~/.dotfiles/Workspaces/GitHub.code-workspace ~/Workspaces
 
 echo -e "${GREEN}\xf0\x9f\x8e\x89 Congratulations, you have finished setting up!${RESET}"
 
-if [ "true" != "$CI" ]
+if [[ "true" != "$CI" && ! $SHELL =~ \/zsh$ ]]
 then
   echo "${BLUE}Toggling to zsh.${RESET}"
   exec zsh
