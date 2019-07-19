@@ -1,18 +1,17 @@
 {
-	"folders": [
+  "folders": [
     {
-      "name": ".dotfiles",
       "path": "/Users/JounQin/.dotfiles"
     },
     {
       "path": "/Users/JounQin/Workspaces/GitHub/flutter-study"
     },
     {
-      "name": "ngrx",
       "path": "/Users/JounQin/Workspaces/GitHub/ngrx"
     }
   ],
-	"settings": {
-		"jira-plugin.workingProject": ""
-	}
+  "settings": {
+    "dart.analysisExcludedFolders": ["storybook/node_modules"],
+    "jira-plugin.workingProject": ""
+  }
 }

@@ -13,9 +13,6 @@
       "path": "/Users/JounQin/Workspaces/Alauda/icarus"
     },
     {
-      "path": "/Users/JounQin/Workspaces/Alauda/rubick"
-    },
-    {
       "path": "/Users/JounQin/Workspaces/Alauda/underlord"
     }
   ],
@@ -23,13 +20,10 @@
     "atlascode.jira.workingSite": {
       "baseUrlSuffix": "alaudatech.com"
     },
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      "vue"
-    ],
+    "eslint.validate": ["javascript", "javascriptreact", "vue"],
     "jira-plugin.baseUrl": "http://jira.alaudatech.com",
     "jira-plugin.username": "jrliu",
     "jira-plugin.workingProject": "",
+    "sassVariablesHelper.route": "/Users/JounQin/Workspaces/Alauda/alauda-ui/src/theme/style.scss"
   }
 }
