@@ -60,7 +60,7 @@ You can safely modify or remove the alias `proxy` in `zshrc` and the file `gitpr
 
 ### Quick Look plugins
 
-A set of [Quick Look](http://en.wikipedia.org/wiki/Quick_Look) plugins for developers are bundled via `brew cask`, they are used to help you quick preview the file without opening it for OS X/macOS.
+A set of [Quick Look](http://en.wikipedia.org/wiki/Quick_Look) [plugins](https://github.com/sindresorhus/quick-look-plugins) for developers are bundled via `brew cask`, they are used to help you quick preview the file without opening it for OS X/macOS.
 All of the available plugins are included by default.
 
 ### SwitchHosts
