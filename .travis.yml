@@ -10,6 +10,7 @@ matrix:
       before_install:
         - sudo apt-get install build-essential
     - os: osx
+      osx_image: xcode11
       cache:
         directories:
           - /usr/local/Homebrew
