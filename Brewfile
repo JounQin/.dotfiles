@@ -20,6 +20,7 @@ brew "fzy"
 brew "git"
 brew "git-extras"
 brew "git-flow"
+brew "git-lfs"
 brew "gnupg"
 brew "go"
 brew "hub"
@@ -72,13 +73,12 @@ cask "suspicious-package"
 cask "switchhosts"
 cask "tencent-lemon"
 cask "typora"
+cask "upic"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "zeplin"
 cask "jounqin/x/aerial-beta"
 cask "jounqin/x/unlox-beta"
-mas "iPic", id: 1101244278
-mas "iTimer", id: 1062139745
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328
