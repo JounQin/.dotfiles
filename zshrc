@@ -114,6 +114,10 @@ if brew command command-not-found-init > /dev/null 2>&1
 then eval "$(brew command-not-found-init)"
 fi
 
+if [ -f "$HOME/.zshrc.local" ]
+then source "$HOME/.zshrc.local"
+fi
+
 # exports
 export EDITOR=code
 export FLUTTER_HOME=/usr/local/opt/flutter
@@ -124,4 +128,3 @@ export CPPFLAGS="-I$RUBY_HOME/include"
 export LDFLAGS="-L$RUBY_HOME/lib"
 export PKG_CONFIG_PATH="$RUBY_HOME/lib/pkgconfig"
 export PATH="/usr/local/sbin:$FLUTTER_HOME/bin:$RUBY_HOME/bin:$PATH"
-export SHELL=/usr/local/bin/zsh
