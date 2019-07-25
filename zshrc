@@ -3,11 +3,6 @@ alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelpe
 alias proxy="export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086"
 alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
 
-## proxy by default
-if [ "true" != "$CI" ]
-then proxy
-fi
-
 # oh-my-zsh start
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
@@ -115,7 +110,7 @@ then eval "$(brew command-not-found-init)"
 fi
 
 if [ -f "$HOME/.zshrc.local" ]
-then source "$HOME/.zshrc.local"
+then source $HOME/.zshrc.local
 fi
 
 # exports

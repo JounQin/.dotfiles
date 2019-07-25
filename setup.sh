@@ -83,11 +83,10 @@ execBrewBundle() {
     brew update
     if [[ "$OSTYPE" == "darwin"* ]]
     then
-      brew install cocoapods --force
+      brew install cocoapods --force --verbose --debug
       brew cask install font-fira-code --force --verbose --debug
     else
-      brew install python2
-      export HOMEBREW_BUNDLE_BREW_SKIP="ios-deploy mas"
+      export HOMEBREW_BUNDLE_BREW_SKIP="ios-deploy libimobiledevice mas"
       export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
     fi
     export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
