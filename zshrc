@@ -114,12 +114,20 @@ export BREM_PKG=/usr/local/opt
 # nvm
 export NVM_DIR=$HOME/.nvm
 export NVM_HOME=$BREM_PKG/nvm
+
 if [ -s "$NVM_HOME/nvm.sh" ]
 then source $NVM_HOME/nvm.sh
 fi
 
 if [ -s "$NVM_HOME/etc/bash_completion.d/nvm" ]
 then source $NVM_HOME/etc/bash_completion.d/nvm
+fi
+
+# travis
+export TRAVIS_HOME=$HOME/.travis
+
+if [ -s $TRAVIS_HOME/travis.sh ]
+then source $TRAVIS_HOME/travis.sh
 fi
 
 # exports
