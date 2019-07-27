@@ -45,14 +45,14 @@ then
 fi
 
 ## check Oh-My-Zsh installation
-if [ ! -d "$HOME/.oh-my-zsh" ]
+if [ ! -d $HOME/.oh-my-zsh ]
 then
   echo "Installing Oh-My-Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 ## check Zplugin installation
-if [ ! -d "$HOME/.zplugin" ]
+if [ ! -d $HOME/.zplugin ]
 then
   echo "Installing Zplugin..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"

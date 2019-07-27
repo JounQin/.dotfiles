@@ -106,7 +106,7 @@ zplugin light zsh-users/zsh-history-substring-search
 
 # command-not-found
 if brew command command-not-found-init > /dev/null 2>&1
-then eval "$(brew command-not-found-init)"
+then eval $(brew command-not-found-init)
 fi
 
 export BREM_PKG=/usr/local/opt
@@ -115,11 +115,11 @@ export BREM_PKG=/usr/local/opt
 export NVM_DIR=$HOME/.nvm
 export NVM_HOME=$BREM_PKG/nvm
 
-if [ -s "$NVM_HOME/nvm.sh" ]
+if [ -s $NVM_HOME/nvm.sh ]
 then source $NVM_HOME/nvm.sh
 fi
 
-if [ -s "$NVM_HOME/etc/bash_completion.d/nvm" ]
+if [ -s $NVM_HOME/etc/bash_completion.d/nvm ]
 then source $NVM_HOME/etc/bash_completion.d/nvm
 fi
 
@@ -136,12 +136,12 @@ export FLUTTER_HOME=$BREM_PKG/flutter
 export RUBY_HOME=$BREM_PKG/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export CPPFLAGS="-I$RUBY_HOME/include"
-export LDFLAGS="-L$RUBY_HOME/lib"
-export PKG_CONFIG_PATH="$RUBY_HOME/lib/pkgconfig"
-export PATH="/usr/local/sbin:$FLUTTER_HOME/bin:$RUBY_HOME/bin:$PATH"
+export CPPFLAGS=-I$RUBY_HOME/include
+export LDFLAGS=-L$RUBY_HOME/lib
+export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
+export PATH=/usr/local/sbin:$FLUTTER_HOME/bin:$RUBY_HOME/bin:$PATH
 
 # local
-if [ -f "$HOME/.zshrc.local" ]
+if [ -f $HOME/.zshrc.local ]
 then source $HOME/.zshrc.local
 fi
