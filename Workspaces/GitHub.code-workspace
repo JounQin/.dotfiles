@@ -21,6 +21,10 @@
       "path": "/Users/JounQin/Workspaces/GitHub/eslint-config-1stg"
     },
     {
+      "name": "eslint-plugin-mdx",
+      "path": "/Users/JounQin/Workspaces/GitHub/eslint-plugin-mdx"
+    },
+    {
       "name": "flutter-study",
       "path": "/Users/JounQin/Workspaces/GitHub/flutter-study"
     },
@@ -33,16 +37,16 @@
       "path": "/Users/JounQin/Workspaces/GitHub/react-hackernews"
     },
     {
-      "name": "typescript-transform-graphql",
-      "path": "/Users/JounQin/Workspaces/GitHub/typescript-transform-graphql"
-    },
-    {
       "name": "Slides",
       "path": "/Users/JounQin/Workspaces/GitHub/Slides"
     },
     {
-      "name": "ttypescript",
-      "path": "/Users/JounQin/Workspaces/GitHub/ttypescript"
+      "name": "typescript-transform-graphql",
+      "path": "/Users/JounQin/Workspaces/GitHub/typescript-transform-graphql"
+    },
+    {
+      "name": "vscode-mdx",
+      "path": "/Users/JounQin/Workspaces/GitHub/vscode-mdx"
     }
   ],
   "settings": {
