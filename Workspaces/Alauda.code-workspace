@@ -20,7 +20,7 @@
     "atlascode.jira.workingSite": {
       "baseUrlSuffix": "alaudatech.com"
     },
-    "cSpell.userWords": [
+    "cSpell.words": [
       "alauda",
       "alaudabot",
       "alaudacn",
@@ -99,7 +99,7 @@
       "userview",
       "volumetype",
       "vxlan",
-      "weblab",
+      "weblab"
     ],
     "eslint.validate": ["javascript", "javascriptreact", "vue"],
     "jira-plugin.baseUrl": "http://jira.alaudatech.com",
