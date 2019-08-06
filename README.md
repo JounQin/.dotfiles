@@ -51,11 +51,6 @@ I was always using official `apple` theme before I meet [spaceship](https://gith
 
 Just change file `zshrc` if you want to modify the zsh plugins, theme, aliases or exports, etc.
 
-### Proxy
-
-It is assumed that you're using [SSR](https://github.com/qinyuhang/ShadowsocksX-NG-R) to across THE GREAT FIREWALL, so proxies for Terminal and git are set automatically.
-You can safely modify or remove the alias `proxy` in `zshrc` and the file `gitproxy`.
-
 ## Notable plugins and apps
 
 ### Quick Look plugins

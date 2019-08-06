@@ -109,11 +109,11 @@ if brew command command-not-found-init > /dev/null 2>&1
 then eval $(brew command-not-found-init)
 fi
 
-export BREM_PKG=/usr/local/opt
+export BREW_PKG=/usr/local/opt
 
 # nvm
 export NVM_DIR=$HOME/.nvm
-export NVM_HOME=$BREM_PKG/nvm
+export NVM_HOME=$BREW_PKG/nvm
 
 if [ -s $NVM_HOME/nvm.sh ]
 then source $NVM_HOME/nvm.sh
@@ -132,8 +132,8 @@ fi
 
 # exports
 export EDITOR=code
-export FLUTTER_HOME=$BREM_PKG/flutter
-export RUBY_HOME=$BREM_PKG/ruby
+export FLUTTER_HOME=$BREW_PKG/flutter
+export RUBY_HOME=$BREW_PKG/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export CPPFLAGS=-I$RUBY_HOME/include
