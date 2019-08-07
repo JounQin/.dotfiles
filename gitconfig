@@ -1,9 +1,11 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 name = JounQin
 email = admin@1stg.me
 	signingkey = 0BC0B62F2E603198
+[commit]
+	gpgsign = true
 [core]
 	excludesfile = ~/.gitignore
 	gitproxy = "~/.gitproxy for github.com"
+[tag]
+  gpgsign = true
