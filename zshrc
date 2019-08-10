@@ -44,6 +44,7 @@ plugins=(
   ng
   node
   npm
+  npx
   osx
   please
   profiles

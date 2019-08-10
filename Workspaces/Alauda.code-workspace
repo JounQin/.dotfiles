@@ -21,6 +21,7 @@
       "baseUrlSuffix": "alaudatech.com"
     },
     "cSpell.words": [
+      "aiops",
       "alauda",
       "alaudabot",
       "alaudacn",
@@ -29,6 +30,7 @@
       "alaudaorg",
       "alaudaproducts",
       "alaudatech",
+      "alerttemplates",
       "antiaffinity",
       "apiextensions",
       "apiserver",
