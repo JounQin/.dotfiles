@@ -36,8 +36,8 @@ then
   then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   else
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-    test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-    test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+    test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
     echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
     brew install zsh
@@ -45,14 +45,14 @@ then
 fi
 
 ## check Oh-My-Zsh installation
-if [ ! -d $HOME/.oh-my-zsh ]
+if [ ! -d "$HOME/.oh-my-zsh" ]
 then
   echo "Installing Oh-My-Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 ## check Zplugin installation
-if [ ! -d $HOME/.zplugin ]
+if [ ! -d "$HOME/.zplugin" ]
 then
   echo "Installing Zplugin..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
@@ -61,12 +61,12 @@ fi
 if [ "true" == "$CI" ]
 then
   echo "${YELLOW}CI detected, copy zshrc automatically.${RESET}"
-  \cp -f zshrc $HOME/.zshrc
+  \cp -f zshrc "$HOME/.zshrc"
 else
   if read -t 5 -p "Copy or overwrite \`~/.zshrc\`? [y/N]: " -n 1 -r
   then
     if [[ $REPLY =~ ^[Yy]$ ]]
-    then \cp -f zshrc $HOME/.zshrc
+    then \cp -f zshrc "$HOME/.zshrc"
     fi
   else
     echo
