@@ -1,8 +1,8 @@
 *.log
 *.log.*
+*.tsbuildinfo
 .cache
 .DS_Store
 .vscode
 coverage
 node_modules
-tsconfig.tsbuildinfo

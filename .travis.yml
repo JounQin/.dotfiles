@@ -17,6 +17,4 @@ matrix:
           - /usr/local/Cellar
           - /usr/local/Caskroom
 
-script:
-  - set -e
-  - yes | bash ./setup.sh
+script: yes | bash ./setup.sh

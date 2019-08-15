@@ -7,5 +7,6 @@ email = admin@1stg.me
 [core]
 	excludesfile = ~/.gitignore
 	gitproxy = "~/.gitproxy for github.com"
+	ignorecase = false
 [tag]
   gpgsign = true
