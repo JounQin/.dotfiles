@@ -3,6 +3,8 @@
 *.tsbuildinfo
 .cache
 .DS_Store
+.type-coverage
 .vscode
 coverage
+dist
 node_modules
