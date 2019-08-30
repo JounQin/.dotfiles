@@ -1,18 +1,27 @@
 {
   "folders": [
     {
+      "name": "alauda-common-snippet",
       "path": "/Users/JounQin/Workspaces/Alauda/alauda-common-snippet"
     },
     {
+      "name": "alauda-console",
       "path": "/Users/JounQin/Workspaces/Alauda/alauda-console"
     },
     {
+      "name": "alauda-ui",
       "path": "/Users/JounQin/Workspaces/Alauda/alauda-ui"
     },
     {
+      "name": "blink",
+      "path": "/Users/JounQin/Workspaces/Alauda/blink"
+    },
+    {
+      "name": "icarus",
       "path": "/Users/JounQin/Workspaces/Alauda/icarus"
     },
     {
+      "name": "underlord",
       "path": "/Users/JounQin/Workspaces/Alauda/underlord"
     }
   ],
@@ -35,6 +44,7 @@
       "antiaffinity",
       "apiextensions",
       "apiserver",
+      "apklocal",
       "applicationhistories",
       "autoscale",
       "autoscaler",
@@ -42,6 +52,7 @@
       "cidr",
       "clusterregistry",
       "clusterroles",
+      "clusterview",
       "columnheader",
       "configmap",
       "configmaps",
@@ -50,6 +61,7 @@
       "daemonset",
       "daemonsets",
       "deletecollection",
+      "diablo",
       "displayname",
       "dockerconfigjson",
       "doesnotexist",
