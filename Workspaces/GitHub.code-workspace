@@ -45,6 +45,10 @@
       "path": "/Users/JounQin/Workspaces/GitHub/react-hackernews"
     },
     {
+      "name": "react",
+      "path": "/Users/JounQin/Workspaces/GitHub/react"
+    },
+    {
       "name": "Slides",
       "path": "/Users/JounQin/Workspaces/GitHub/Slides"
     },
@@ -59,6 +63,12 @@
     {
       "name": "vscode-mdx",
       "path": "/Users/JounQin/Workspaces/GitHub/vscode-mdx"
+    },
+    {
+      "path": "/Users/JounQin/Workspaces/GitHub/umd-globals"
+    },
+    {
+      "path": "/Users/JounQin/Workspaces/GitHub/remark-preset-prettier"
     }
   ],
   "settings": {

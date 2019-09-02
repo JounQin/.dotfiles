@@ -3,6 +3,7 @@
 *.tsbuildinfo
 .cache
 .DS_Store
+.parcel-cache
 .type-coverage
 .vscode
 coverage
