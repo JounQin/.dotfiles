@@ -41,12 +41,12 @@
       "path": "/Users/JounQin/Workspaces/GitHub/prettier"
     },
     {
-      "name": "react-hackernews",
-      "path": "/Users/JounQin/Workspaces/GitHub/react-hackernews"
-    },
-    {
       "name": "react",
       "path": "/Users/JounQin/Workspaces/GitHub/react"
+    },
+    {
+      "name": "react-hackernews",
+      "path": "/Users/JounQin/Workspaces/GitHub/react-hackernews"
     },
     {
       "name": "Slides",
@@ -61,14 +61,12 @@
       "path": "/Users/JounQin/Workspaces/GitHub/typescript-transform-graphql"
     },
     {
-      "name": "vscode-mdx",
-      "path": "/Users/JounQin/Workspaces/GitHub/vscode-mdx"
-    },
-    {
+      "name": "umd-globals",
       "path": "/Users/JounQin/Workspaces/GitHub/umd-globals"
     },
     {
-      "path": "/Users/JounQin/Workspaces/GitHub/remark-preset-prettier"
+      "name": "vscode-mdx",
+      "path": "/Users/JounQin/Workspaces/GitHub/vscode-mdx"
     }
   ],
   "settings": {
