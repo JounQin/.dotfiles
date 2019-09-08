@@ -49,6 +49,10 @@
       "path": "/Users/JounQin/Workspaces/GitHub/react-hackernews"
     },
     {
+      "name": "remark-preset-prettier",
+      "path": "/Users/JounQin/Workspaces/GitHub/remark-preset-prettier"
+    },
+    {
       "name": "Slides",
       "path": "/Users/JounQin/Workspaces/GitHub/Slides"
     },
@@ -67,6 +71,10 @@
     {
       "name": "vscode-mdx",
       "path": "/Users/JounQin/Workspaces/GitHub/vscode-mdx"
+    },
+    {
+      "name": "vue",
+      "path": "/Users/JounQin/Workspaces/GitHub/vue"
     }
   ],
   "settings": {
