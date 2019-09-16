@@ -23,6 +23,10 @@
     {
       "name": "underlord",
       "path": "/Users/JounQin/Workspaces/Alauda/underlord"
+    },
+    {
+      "name": "vscode-snippets",
+      "path": "/Users/JounQin/Workspaces/Alauda/vscode-snippets"
     }
   ],
   "settings": {

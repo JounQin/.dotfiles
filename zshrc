@@ -134,6 +134,7 @@ fi
 
 # exports
 export EDITOR=code
+export EFF_NO_LINK_RULES=true
 export FLUTTER_HOME=$BREW_PKG/flutter
 export RUBY_HOME=$BREW_PKG/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
