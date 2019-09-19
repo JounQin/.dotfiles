@@ -67,6 +67,7 @@
       "deletecollection",
       "diablo",
       "displayname",
+      "dockercfg",
       "dockerconfigjson",
       "doesnotexist",
       "donot",
