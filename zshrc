@@ -102,7 +102,7 @@ zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zplugin light zsh-users/zsh-history-substring-search
-zplugin ice atload"zpcdreplay" atclone'./zplug.zsh'          
+zplugin ice atload"zpcdreplay" atclone'./zplug.zsh'
 zplugin light g-plane/zsh-yarn-autocompletions
 # zplugin end
 

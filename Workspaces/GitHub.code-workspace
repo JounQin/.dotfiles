@@ -45,6 +45,14 @@
       "path": "/Users/JounQin/Workspaces/GitHub/prettier"
     },
     {
+      "name": "prettier-plugins",
+      "path": "/Users/JounQin/Workspaces/GitHub/prettier-plugins"
+    },
+    {
+      "name": "pkgr",
+      "path": "/Users/JounQin/Workspaces/GitHub/pkgr"
+    },
+    {
       "name": "react",
       "path": "/Users/JounQin/Workspaces/GitHub/react"
     },
@@ -69,12 +77,12 @@
       "path": "/Users/JounQin/Workspaces/GitHub/stated-form-bean"
     },
     {
-      "name": "typescript-transform-graphql",
-      "path": "/Users/JounQin/Workspaces/GitHub/typescript-transform-graphql"
+      "name": "types",
+      "path": "/Users/JounQin/Workspaces/GitHub/types"
     },
     {
-      "name": "umd-globals",
-      "path": "/Users/JounQin/Workspaces/GitHub/umd-globals"
+      "name": "typescript-transform-graphql",
+      "path": "/Users/JounQin/Workspaces/GitHub/typescript-transform-graphql"
     },
     {
       "name": "vscode-mdx",

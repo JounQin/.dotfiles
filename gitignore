@@ -1,9 +1,12 @@
 *.log
 *.log.*
+*.prefs
 *.tsbuildinfo
 .cache
+.classpath
 .DS_Store
 .parcel-cache
+.project
 .type-coverage
 .vscode
 coverage

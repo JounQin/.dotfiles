@@ -7,6 +7,8 @@ email = admin@1stg.me
 [commit]
 	gpgsign = true
 [core]
+  attributesfile = ~/.gitattributes
+  autocrlf = input
 	excludesfile = ~/.gitignore
 	gitproxy = "~/.gitproxy for github.com"
 	ignorecase = false
