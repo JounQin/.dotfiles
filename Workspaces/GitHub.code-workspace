@@ -5,92 +5,84 @@
       "path": "/Users/JounQin/.dotfiles"
     },
     {
-      "name": "aerial-links",
-      "path": "/Users/JounQin/Workspaces/GitHub/aerial-links"
-    },
-    {
       "name": "babel-preset-proposal-typescript",
-      "path": "/Users/JounQin/Workspaces/GitHub/babel-preset-proposal-typescript"
+      "path": "GitHub/babel-preset-proposal-typescript"
     },
     {
       "name": "blog",
-      "path": "/Users/JounQin/Workspaces/GitHub/blog"
+      "path": "GitHub/blog"
     },
     {
       "name": "configs",
-      "path": "/Users/JounQin/Workspaces/GitHub/configs"
-    },
-    {
-      "name": "delete-branch",
-      "path": "/Users/JounQin/Workspaces/GitHub/delete-branch"
+      "path": "GitHub/configs"
     },
     {
       "name": "eslint-import-resolver-ts",
-      "path": "/Users/JounQin/Workspaces/GitHub/eslint-import-resolver-ts"
+      "path": "GitHub/eslint-import-resolver-ts"
     },
     {
       "name": "eslint-mdx",
-      "path": "/Users/JounQin/Workspaces/GitHub/eslint-mdx"
-    },
-    {
-      "name": "flutter-study",
-      "path": "/Users/JounQin/Workspaces/GitHub/flutter-study"
+      "path": "GitHub/eslint-mdx"
     },
     {
       "name": "ngrx",
-      "path": "/Users/JounQin/Workspaces/GitHub/ngrx"
+      "path": "GitHub/ngrx"
     },
     {
       "name": "prettier",
-      "path": "/Users/JounQin/Workspaces/GitHub/prettier"
+      "path": "GitHub/prettier"
     },
     {
       "name": "prettier-plugins",
-      "path": "/Users/JounQin/Workspaces/GitHub/prettier-plugins"
+      "path": "GitHub/prettier-plugins"
     },
     {
       "name": "pkgr",
-      "path": "/Users/JounQin/Workspaces/GitHub/pkgr"
+      "path": "GitHub/pkgr"
     },
     {
       "name": "react",
-      "path": "/Users/JounQin/Workspaces/GitHub/react"
+      "path": "GitHub/react"
     },
     {
       "name": "react-hackernews",
-      "path": "/Users/JounQin/Workspaces/GitHub/react-hackernews"
+      "path": "GitHub/react-hackernews"
     },
     {
       "name": "remark-preset-prettier",
-      "path": "/Users/JounQin/Workspaces/GitHub/remark-preset-prettier"
+      "path": "GitHub/remark-preset-prettier"
     },
     {
       "name": "Slides",
-      "path": "/Users/JounQin/Workspaces/GitHub/Slides"
+      "path": "GitHub/Slides"
     },
     {
       "name": "stated-bean",
-      "path": "/Users/JounQin/Workspaces/GitHub/stated-bean"
+      "path": "GitHub/stated-bean"
     },
     {
       "name": "stated-form-bean",
-      "path": "/Users/JounQin/Workspaces/GitHub/stated-form-bean"
+      "path": "GitHub/stated-form-bean"
+    },
+    {
+      "name": "tslint-config-eslint",
+      "path": "GitHub/tslint-config-eslint"
     },
     {
       "name": "types",
-      "path": "/Users/JounQin/Workspaces/GitHub/types"
+      "path": "GitHub/types"
     },
     {
       "name": "typescript-transform-graphql",
-      "path": "/Users/JounQin/Workspaces/GitHub/typescript-transform-graphql"
+      "path": "GitHub/typescript-transform-graphql"
     },
     {
       "name": "vscode-mdx",
-      "path": "/Users/JounQin/Workspaces/GitHub/vscode-mdx"
+      "path": "GitHub/vscode-mdx"
     },
     {
       "name": "vue",
-      "path": "/Users/JounQin/Workspaces/GitHub/vue"
+      "path": "GitHub/vue"
     }
   ],
   "settings": {
