@@ -3,9 +3,9 @@
 *.prefs
 *.tsbuildinfo
 .cache
+.*cache
 .classpath
 .DS_Store
-.parcel-cache
 .project
 .type-coverage
 .vscode

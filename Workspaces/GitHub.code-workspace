@@ -21,6 +21,10 @@
       "path": "GitHub/eslint-import-resolver-ts"
     },
     {
+      "name": "eslint-import-resolver-typescript",
+      "path": "GitHub/eslint-import-resolver-typescript"
+    },
+    {
       "name": "eslint-mdx",
       "path": "GitHub/eslint-mdx"
     },
