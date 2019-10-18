@@ -44,6 +44,8 @@
       "alaudaorg",
       "alaudaproducts",
       "alaudatech",
+      "alertname",
+      "alertstate",
       "alerttemplate",
       "alerttemplates",
       "antiaffinity",

@@ -49,8 +49,10 @@ brew "yarn"
 brew "zsh"
 brew "dart-lang/dart/dart"
 brew "jesseduffield/lazydocker/lazydocker"
+brew "jounqin/x/pnpm"
 brew "miderwong/flutter/flutter"
 brew "thoughtbot/formulae/rcm"
+cask "aerial"
 cask "alfred"
 cask "android-studio"
 cask "axure-rp"
@@ -86,19 +88,17 @@ cask "switchhosts"
 cask "tencent-lemon"
 cask "touch-bar-simulator"
 cask "typora"
+cask "unlox"
 cask "upic"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "zeplin"
-cask "jounqin/x/aerial-beta"
-cask "jounqin/x/unlox-beta"
 mas "Image2icon", id: 992115977
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328
 mas "QQ音乐", id: 595615424
 mas "SPlayer", id: 414675434
-mas "Xcode", id: 497799835
 mas "企业微信", id: 1189898970
 mas "印象笔记", id: 1356055347
 mas "微信", id: 836500024
