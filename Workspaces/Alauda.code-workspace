@@ -2,31 +2,31 @@
   "folders": [
     {
       "name": "alauda-common-snippet",
-      "path": "/Users/JounQin/Workspaces/Alauda/alauda-common-snippet"
+      "path": "Alauda/alauda-common-snippet"
     },
     {
       "name": "alauda-console",
-      "path": "/Users/JounQin/Workspaces/Alauda/alauda-console"
+      "path": "Alauda/alauda-console"
     },
     {
       "name": "alauda-ui",
-      "path": "/Users/JounQin/Workspaces/Alauda/alauda-ui"
+      "path": "Alauda/alauda-ui"
     },
     {
       "name": "blink",
-      "path": "/Users/JounQin/Workspaces/Alauda/blink"
+      "path": "Alauda/blink"
     },
     {
       "name": "icarus",
-      "path": "/Users/JounQin/Workspaces/Alauda/icarus"
+      "path": "Alauda/icarus"
     },
     {
       "name": "underlord",
-      "path": "/Users/JounQin/Workspaces/Alauda/underlord"
+      "path": "Alauda/underlord"
     },
     {
       "name": "vscode-snippets",
-      "path": "/Users/JounQin/Workspaces/Alauda/vscode-snippets"
+      "path": "Alauda/vscode-snippets"
     }
   ],
   "settings": {
@@ -53,6 +53,7 @@
       "apiserver",
       "apklocal",
       "applicationhistories",
+      "auicardheader",
       "autoscale",
       "autoscaler",
       "autoscaling",
@@ -100,6 +101,7 @@
       "manageview",
       "mathilde",
       "mesos",
+      "navconfig",
       "notificationreceivers",
       "notificationsenders",
       "notificationservers",
@@ -148,6 +150,6 @@
     "jira-plugin.baseUrl": "http://jira.alaudatech.com",
     "jira-plugin.username": "jrliu",
     "jira-plugin.workingProject": "",
-    "sassVariablesHelper.route": "/Users/JounQin/Workspaces/Alauda/alauda-ui/src/theme/style.scss"
+    "sassVariablesHelper.route": "Alauda/alauda-ui/src/theme/style.scss"
   }
 }
