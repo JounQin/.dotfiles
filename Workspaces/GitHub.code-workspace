@@ -17,6 +17,10 @@
       "path": "GitHub/configs"
     },
     {
+      "name": "docz",
+      "path": "GitHub/docz"
+    },
+    {
       "name": "eslint-import-resolver-ts",
       "path": "GitHub/eslint-import-resolver-ts"
     },
