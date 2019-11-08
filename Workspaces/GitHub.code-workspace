@@ -37,6 +37,10 @@
       "path": "GitHub/Homebrew-X"
     },
     {
+      "name": "lazy-compile-webpack-plugin",
+      "path": "GitHub/lazy-compile-webpack-plugin"
+    },
+    {
       "name": "ngrx",
       "path": "GitHub/ngrx"
     },
