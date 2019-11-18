@@ -221,29 +221,7 @@
       "vxlan",
       "weblab"
     ],
-    "eslint.validate": [
-      {
-        "language": "javascript",
-        "autoFix": true
-      },
-      {
-        "language": "javascriptreact",
-        "autoFix": true
-      },
-      {
-        "language": "markdown",
-        "autoFix": true
-      },
-      {
-        "language": "mdx",
-        "autoFix": true
-      },
-      {
-        "language": "vue",
-        "autoFix": true
-      }
-    ],
-    "jira-plugin.baseUrl": "http://jira.alaudatech.com",
+    "jira-plugin.baseUrl": "http://jira.alaudatech.cn",
     "jira-plugin.username": "jrliu",
     "jira-plugin.workingProject": "",
     "sassVariablesHelper.route": "Alauda/alauda-ui/src/theme/style.scss"
