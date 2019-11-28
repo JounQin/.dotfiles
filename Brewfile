@@ -28,13 +28,13 @@ brew "gnupg"
 brew "go"
 brew "hub"
 brew "hubflow"
+brew "libusbmuxd"
 brew "libimobiledevice", args: ["HEAD"]
 brew "ideviceinstaller"
 brew "ios-deploy"
 brew "jq"
 brew "kubernetes-cli"
 brew "lazydocker"
-brew "libusbmuxd", args: ["HEAD"]
 brew "mas"
 brew "nginx"
 brew "nnn"
@@ -72,6 +72,7 @@ cask "java"
 cask "keka"
 cask "kekadefaultapp"
 cask "lunar"
+cask "microsoft-teams"
 cask "motrix"
 cask "one-switch"
 cask "postman"
@@ -85,6 +86,7 @@ cask "quicklookase"
 cask "shadowsocksx-ng-r"
 cask "sip"
 cask "sketch"
+cask "sogouinput"
 cask "station"
 cask "suspicious-package"
 cask "switchhosts"
@@ -97,6 +99,10 @@ cask "visual-studio-code"
 cask "webpquicklook"
 cask "zeplin"
 mas "Image2icon", id: 992115977
+mas "iMovie 剪辑", id: 408981434
+mas "Keynote 讲演", id: 409183694
+mas "Numbers 表格", id: 409203825
+mas "Pages 文稿", id: 409201541
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328
@@ -104,6 +110,7 @@ mas "QQ音乐", id: 595615424
 mas "SPlayer", id: 414675434
 mas "企业微信", id: 1189898970
 mas "印象笔记", id: 1356055347
+mas "库乐队", id: 682658836
 mas "微信", id: 836500024
 mas "截图", id: 1059334054
 mas "看图", id: 1314842898
