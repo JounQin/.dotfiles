@@ -41,6 +41,10 @@
       "path": "GitHub/lazy-compile-webpack-plugin"
     },
     {
+      "name": "mdx",
+      "path": "GitHub/mdx"
+    },
+    {
       "name": "ngrx",
       "path": "GitHub/ngrx"
     },

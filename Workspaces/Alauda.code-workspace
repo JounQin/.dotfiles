@@ -183,6 +183,7 @@
       "resourceratio",
       "resourcetypes",
       "rolebindings",
+      "roletemplate",
       "rowtemplateindex",
       "rubick",
       "scaleerror",

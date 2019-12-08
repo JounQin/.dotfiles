@@ -55,10 +55,13 @@ brew "dart-lang/dart/dart"
 brew "mathildetech/alauda/console-cli"
 brew "miderwong/flutter/flutter"
 brew "thoughtbot/formulae/rcm"
+cask "1password"
 cask "aerial"
 cask "alfred"
+cask "aliwangwang"
 cask "android-studio"
 cask "axure-rp"
+cask "baidunetdisk"
 cask "bartender"
 cask "dash"
 cask "dingtalk"
@@ -101,6 +104,7 @@ cask "zeplin"
 mas "Image2icon", id: 992115977
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
+mas "Moon FM", id: 1465712037
 mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
 mas "Paste", id: 967805235
@@ -108,9 +112,8 @@ mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328
 mas "QQ音乐", id: 595615424
 mas "SPlayer", id: 414675434
+mas "Xcode", id: 497799835
 mas "企业微信", id: 1189898970
-mas "印象笔记", id: 1356055347
-mas "库乐队", id: 682658836
 mas "微信", id: 836500024
 mas "截图", id: 1059334054
 mas "看图", id: 1314842898
