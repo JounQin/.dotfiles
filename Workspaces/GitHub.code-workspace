@@ -5,6 +5,10 @@
       "path": "/Users/JounQin/.dotfiles"
     },
     {
+      "name": ".github",
+      "path": "GitHub/.github"
+    },
+    {
       "name": "babel-preset-proposal-typescript",
       "path": "GitHub/babel-preset-proposal-typescript"
     },
@@ -35,10 +39,6 @@
     {
       "name": "Homebrew-X",
       "path": "GitHub/Homebrew-X"
-    },
-    {
-      "name": "lazy-compile-webpack-plugin",
-      "path": "GitHub/lazy-compile-webpack-plugin"
     },
     {
       "name": "mdx",
