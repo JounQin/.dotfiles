@@ -17,6 +17,10 @@
       "path": "GitHub/blog"
     },
     {
+      "name": "Claps.dev",
+      "path": "GitHub/Claps.dev"
+    },
+    {
       "name": "configs",
       "path": "GitHub/configs"
     },
@@ -39,6 +43,10 @@
     {
       "name": "Homebrew-X",
       "path": "GitHub/Homebrew-X"
+    },
+    {
+      "name": "Maskbook",
+      "path": "GitHub/Maskbook"
     },
     {
       "name": "mdx",

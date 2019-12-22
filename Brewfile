@@ -43,7 +43,6 @@ brew "nvm"
 brew "p7zip"
 brew "pandoc"
 brew "pnpm"
-brew "prettier"
 brew "ruby"
 brew "shellcheck"
 brew "thefuck"
@@ -101,6 +100,7 @@ cask "upic"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "zeplin"
+cask "zoom"
 mas "Image2icon", id: 992115977
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
