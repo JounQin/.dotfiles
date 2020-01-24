@@ -1,0 +1,23 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  default:
+    strategy:
+      matrix:
+        node: [12]
+        os: [macOS-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Setup on macOS
+        if: matrix.os == 'macOS-latest'
+        run: yes | bash ./setup.sh
+
+      - name: Setup on Ubuntu
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          sudo apt-get install build-essential
+          yes | bash ./setup.sh

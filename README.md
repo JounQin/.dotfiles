@@ -1,4 +1,4 @@
-# .dotfiles [![Travis](https://img.shields.io/travis/com/JounQin/.dotfiles.svg)](https://travis-ci.com/JounQin/.dotfiles)
+# .dotfiles [![GitHub Actions](https://github.com/JounQin/.dotfiles/workflows/ci/badge.svg)](https://github.com/JounQin/.dotfiles/actions?query=workflow%3A%22ci%22)
 
 Personal but sharable .dotfiles managed by `rcm`.
 
@@ -6,7 +6,8 @@ Personal but sharable .dotfiles managed by `rcm`.
 
 ```sh
 git clone https://github.com/JounQin/.dotfiles.git ~/.dotfiles
-bash ~/.dotfiles/setup.sh
+cd ~/.dotfiles
+bash setup.sh
 ```
 
 ## Explanation

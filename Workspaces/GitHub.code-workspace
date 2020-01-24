@@ -9,6 +9,10 @@
       "path": "GitHub/.github"
     },
     {
+      "name": "1stG",
+      "path": "GitHub/1stG"
+    },
+    {
       "name": "babel-preset-proposal-typescript",
       "path": "GitHub/babel-preset-proposal-typescript"
     },
@@ -43,6 +47,10 @@
     {
       "name": "Homebrew-X",
       "path": "GitHub/Homebrew-X"
+    },
+    {
+      "name": "koa",
+      "path": "GitHub/koa"
     },
     {
       "name": "Maskbook",
@@ -81,6 +89,14 @@
       "path": "GitHub/remark-preset-prettier"
     },
     {
+      "name": "rollup",
+      "path": "GitHub/rollup"
+    },
+    {
+      "name": "rxjs-tslint",
+      "path": "GitHub/rxjs-tslint"
+    },
+    {
       "name": "Slides",
       "path": "GitHub/Slides"
     },
@@ -114,7 +130,6 @@
     }
   ],
   "settings": {
-    "dart.analysisExcludedFolders": ["storybook/node_modules"],
     "jira-plugin.workingProject": ""
   }
 }

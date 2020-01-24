@@ -8,7 +8,8 @@
     "url": "",
     "last_refresh": null,
     "refresh_interval": 0,
-    "include": []
+    "include": [],
+    "children": []
   }],
-  "version": [3, 3, 14, 5404]
+  "version": [3, 5, 2, 5504]
 }

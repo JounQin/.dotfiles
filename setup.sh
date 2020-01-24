@@ -81,12 +81,14 @@ execBrewBundle() {
   if [ "true" == "$CI" ]
   then
     brew update
+    export HOMEBREW_BUNDLE_TAP_SKIP="mathildetech/alauda"
     if [[ "$OSTYPE" == "darwin"* ]]
     then
+      export HOMEBREW_BUNDLE_BREW_SKIP="mathildetech/alauda/console-cli"
       brew install cocoapods --force --verbose --debug
       brew cask install font-fira-code --force --verbose --debug
     else
-      export HOMEBREW_BUNDLE_BREW_SKIP="ios-deploy libimobiledevice mas"
+      export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller libimobiledevice mathildetech/alauda/console-cli mas"
       export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
     fi
     export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
@@ -106,12 +108,12 @@ echo "Setting up rcm..."
 rcup  brew-aliases SwitchHosts gitconfig gitignore gitproxy zshrc
 
 echo "Symlinking VSCode workspaces..."
-WORK_SRC=~/.dotfiles/Workspaces
-WORK_DEST=~/Workspaces
-ln -sf $WORK_SRC/Alauda.code-workspace $WORK_DEST
-ln -sf $WORK_SRC/GitHub.code-workspace $WORK_DEST
-ln -sf $WORK_SRC/Outsourcing.code-workspace $WORK_DEST
-ln -sf $WORK_SRC/ufc.code-workspace $WORK_DEST
+WORKSPACE_SRC=~/.dotfiles/Workspaces
+WORKSPACE_DEST=~/Workspaces
+ln -sf $WORKSPACE_SRC/Alauda.code-workspace $WORKSPACE_DEST
+ln -sf $WORKSPACE_SRC/GitHub.code-workspace $WORKSPACE_DEST
+ln -sf $WORKSPACE_SRC/Outsourcing.code-workspace $WORKSPACE_DEST
+ln -sf $WORKSPACE_SRC/ufc.code-workspace $WORKSPACE_DEST
 
 echo -e "${GREEN}\xf0\x9f\x8e\x89 Congratulations, you have finished setting up!${RESET}"
 
