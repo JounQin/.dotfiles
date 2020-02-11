@@ -80,18 +80,14 @@ execBrewBundle() {
   echo "${BLUE}It may take some time until finishing at the first time, please be a bit patience...${RESET}"
   if [ "true" == "$CI" ]
   then
-    brew update
     export HOMEBREW_BUNDLE_TAP_SKIP="mathildetech/alauda"
     if [[ "$OSTYPE" == "darwin"* ]]
     then
       export HOMEBREW_BUNDLE_BREW_SKIP="mathildetech/alauda/console-cli"
-      brew install cocoapods --force --verbose --debug
-      brew cask install font-fira-code --force --verbose --debug
+      export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
     else
-      export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller libimobiledevice mathildetech/alauda/console-cli mas"
-      export HOMEBREW_BUNDLE_CASK_SKIP=$(brew bundle list --casks | paste -sd " " -)
+      export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller libimobiledevice mas mathildetech/alauda/console-cli"
     fi
-    export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
   fi
   brew bundle
 }
