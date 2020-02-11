@@ -1,5 +1,6 @@
 tap "buo/cask-upgrade"
 tap "dart-lang/dart"
+tap "github/gh"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -47,11 +48,11 @@ brew "pnpm"
 brew "ruby"
 brew "shellcheck"
 brew "thefuck"
-brew "travis"
 brew "typescript"
 brew "yarn"
 brew "zsh"
 brew "dart-lang/dart/dart"
+brew "github/gh/gh"
 brew "mathildetech/alauda/console-cli"
 brew "miderwong/flutter/flutter"
 brew "thoughtbot/formulae/rcm"
@@ -97,20 +98,15 @@ cask "station"
 cask "suspicious-package"
 cask "switchhosts"
 cask "tencent-lemon"
-cask "touch-bar-simulator"
 cask "typora"
 cask "unlox"
 cask "upic"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "zeplin"
-cask "zoom"
 mas "Image2icon", id: 992115977
 mas "iMovie 剪辑", id: 408981434
-mas "Keynote 讲演", id: 409183694
 mas "Moon FM", id: 1465712037
-mas "Numbers 表格", id: 409203825
-mas "Pages 文稿", id: 409201541
 mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328

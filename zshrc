@@ -130,16 +130,10 @@ if [ -s $NVM_HOME/etc/bash_completion.d/nvm ]
 then source $NVM_HOME/etc/bash_completion.d/nvm
 fi
 
-# travis
-export TRAVIS_HOME=$HOME/.travis
-
-if [ -s $TRAVIS_HOME/travis.sh ]
-then source $TRAVIS_HOME/travis.sh
-fi
-
 # exports
 export EDITOR=code
 export EFF_NO_LINK_RULES=true
+export HOMEBREW_BUNDLE_NO_LOCK=true
 export FLUTTER_HOME=$BREW_PKG/flutter
 export RUBY_HOME=$BREW_PKG/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
