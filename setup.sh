@@ -84,7 +84,7 @@ execBrewBundle() {
     if [[ "$OSTYPE" == "darwin"* ]]
     then
       export HOMEBREW_BUNDLE_BREW_SKIP="mathildetech/alauda/console-cli"
-      export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
+      export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
     else
       export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller ios-deploy libimobiledevice mas mathildetech/alauda/console-cli"
     fi
