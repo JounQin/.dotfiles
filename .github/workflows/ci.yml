@@ -13,7 +13,7 @@ jobs:
 
       - name: Setup on macOS
         if: matrix.os == 'macOS-latest'
-        run: yes | bash ./setup.sh
+        run: sh ./setup.sh
         env:
           CI: true
 
@@ -21,6 +21,6 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: |
           sudo apt-get install build-essential
-          yes | bash ./setup.sh
+          yes | sh ./setup.sh
         env:
           CI: true
