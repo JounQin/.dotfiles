@@ -1,0 +1,12 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "Personal but sharable .dotfiles managed by `rcm`.",
+  "repository": "git@github.com:JounQin/.dotfiles.git",
+  "author": "JounQin <admin@1stg.me>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@1stg/lib-config": "^0.4.3"
+  }
+}

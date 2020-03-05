@@ -1,7 +1,13 @@
 {
   "folders": [
     {
-      "path": "Outsourcing/Omega"
+      "path": "Outsourcing/supply-chain-finance-fe-gys"
+    },
+    {
+      "path": "Outsourcing/supply-chain-finance-fe-qdslyy"
+    },
+    {
+      "path": "Outsourcing/supply-common"
     }
   ],
   "settings": {

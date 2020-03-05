@@ -53,10 +53,6 @@
       "path": "GitHub/koa"
     },
     {
-      "name": "Maskbook",
-      "path": "GitHub/Maskbook"
-    },
-    {
       "name": "mdx",
       "path": "GitHub/mdx"
     },
@@ -93,20 +89,8 @@
       "path": "GitHub/rollup"
     },
     {
-      "name": "rxjs-tslint",
-      "path": "GitHub/rxjs-tslint"
-    },
-    {
       "name": "Slides",
       "path": "GitHub/Slides"
-    },
-    {
-      "name": "stated-bean",
-      "path": "GitHub/stated-bean"
-    },
-    {
-      "name": "stated-form-bean",
-      "path": "GitHub/stated-form-bean"
     },
     {
       "name": "tslint-config-eslint",

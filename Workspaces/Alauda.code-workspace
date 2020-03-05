@@ -90,6 +90,7 @@
       "consolerc",
       "controllerrevisions",
       "coreos",
+      "cpaas",
       "createerror",
       "csps",
       "customresourcedefinitions",
@@ -236,7 +237,10 @@
       "volumetype",
       "vswitch",
       "vxlan",
-      "weblab"
+      "weblab",
+      "ɵcmp",
+      "ɵdir",
+      "ɵprov"
     ],
     "jira-plugin.baseUrl": "http://jira.alaudatech.cn",
     "jira-plugin.username": "jrliu",
