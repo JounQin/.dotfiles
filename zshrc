@@ -1,6 +1,6 @@
 # aliases
 alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
-alias proxy="export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086"
+alias proxy="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7891"
 alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
 
 # bash
@@ -34,7 +34,6 @@ plugins=(
   git-flow
   git-hubflow
   git-prompt
-  git-remote-branch
   gitfast
   github
   gitignore
@@ -135,13 +134,14 @@ export EDITOR=code
 export EFF_NO_LINK_RULES=true
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export FLUTTER_HOME=$BREW_PKG/flutter
+export GOPATH=$HOME/go
 export RUBY_HOME=$BREW_PKG/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export CPPFLAGS=-I$RUBY_HOME/include
 export LDFLAGS=-L$RUBY_HOME/lib
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
-export PATH=/usr/local/sbin:$FLUTTER_HOME/bin:$RUBY_HOME/bin:$PATH
+export PATH=/usr/local/sbin:$FLUTTER_HOME/bin:$GOPATH/bin:$RUBY_HOME/bin:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]

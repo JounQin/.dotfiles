@@ -1,3 +1,4 @@
+*.iml
 *.log
 *.log.*
 *.prefs
@@ -6,9 +7,16 @@
 .*cache
 .classpath
 .DS_Store
+.idea
+.pnp.*
 .project
 .type-coverage
 .vscode
+.yarn
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 coverage
 dist
 node_modules
+web_modules

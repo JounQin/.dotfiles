@@ -1,13 +1,16 @@
 {
   "folders": [
     {
-      "path": "Outsourcing/supply-chain-finance-fe-gys"
+      "name": "Claps.dev",
+      "path": "Outsourcing/Claps.dev"
     },
     {
-      "path": "Outsourcing/supply-chain-finance-fe-qdslyy"
+      "name": "ispacegen-backend",
+      "path": "Outsourcing/ispacegen-backend"
     },
     {
-      "path": "Outsourcing/supply-common"
+      "name": "ispacegen-frontend",
+      "path": "Outsourcing/ispacegen-frontend"
     }
   ],
   "settings": {

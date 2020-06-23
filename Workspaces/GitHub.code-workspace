@@ -2,15 +2,7 @@
   "folders": [
     {
       "name": ".dotfiles",
-      "path": "/Users/JounQin/.dotfiles"
-    },
-    {
-      "name": ".github",
-      "path": "GitHub/.github"
-    },
-    {
-      "name": "1stG",
-      "path": "GitHub/1stG"
+      "path": "../.dotfiles"
     },
     {
       "name": "babel-preset-proposal-typescript",
@@ -21,20 +13,8 @@
       "path": "GitHub/blog"
     },
     {
-      "name": "Claps.dev",
-      "path": "GitHub/Claps.dev"
-    },
-    {
       "name": "configs",
       "path": "GitHub/configs"
-    },
-    {
-      "name": "docz",
-      "path": "GitHub/docz"
-    },
-    {
-      "name": "eslint-import-resolver-ts",
-      "path": "GitHub/eslint-import-resolver-ts"
     },
     {
       "name": "eslint-import-resolver-typescript",
@@ -45,12 +25,12 @@
       "path": "GitHub/eslint-mdx"
     },
     {
-      "name": "Homebrew-X",
-      "path": "GitHub/Homebrew-X"
+      "name": "go-study",
+      "path": "GitHub/go-study"
     },
     {
-      "name": "koa",
-      "path": "GitHub/koa"
+      "name": "Homebrew-X",
+      "path": "GitHub/Homebrew-X"
     },
     {
       "name": "mdx",
@@ -81,32 +61,12 @@
       "path": "GitHub/react-hackernews"
     },
     {
-      "name": "remark-preset-prettier",
-      "path": "GitHub/remark-preset-prettier"
-    },
-    {
       "name": "rollup",
       "path": "GitHub/rollup"
     },
     {
-      "name": "Slides",
-      "path": "GitHub/Slides"
-    },
-    {
-      "name": "tslint-config-eslint",
-      "path": "GitHub/tslint-config-eslint"
-    },
-    {
       "name": "types",
       "path": "GitHub/types"
-    },
-    {
-      "name": "typescript-transform-graphql",
-      "path": "GitHub/typescript-transform-graphql"
-    },
-    {
-      "name": "vscode-mdx",
-      "path": "GitHub/vscode-mdx"
     },
     {
       "name": "vue",
