@@ -1,3 +1,4 @@
+tap "alauda/alauda", "git@gitlab-ce.alauda.cn:alauda/homebrew-alauda.git"
 tap "buo/cask-upgrade"
 tap "dart-lang/dart"
 tap "github/gh"
@@ -10,7 +11,6 @@ tap "homebrew/command-not-found"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jounqin/x"
-tap "mathildetech/alauda", "git@bitbucket.org:mathildetech/homebrew-alauda.git"
 tap "miderwong/flutter"
 tap "thoughtbot/formulae"
 brew "node"
@@ -54,9 +54,9 @@ brew "typescript"
 brew "whalebrew"
 brew "yarn"
 brew "zsh"
+brew "alauda/alauda/console-cli"
 brew "dart-lang/dart/dart"
 brew "github/gh/gh"
-brew "mathildetech/alauda/console-cli"
 brew "miderwong/flutter/flutter"
 brew "thoughtbot/formulae/rcm"
 cask "1password"
@@ -96,7 +96,6 @@ cask "qlstephen"
 cask "qlvideo"
 cask "quicklook-json"
 cask "quicklookase"
-cask "sip"
 cask "sketch"
 cask "sogouinput"
 cask "station"
@@ -109,15 +108,7 @@ cask "unlox"
 cask "upic"
 cask "visual-studio-code"
 cask "webpquicklook"
-cask "zeplin"
-mas "Image2icon", id: 992115977
-mas "Image View Studio", id: 949849217
 mas "iMovie 剪辑", id: 408981434
-mas "Just Focus", id: 1142151959
-mas "Lungo", id: 1263070803
-mas "Moon FM", id: 1465712037
-mas "OneClock", id: 1257395357
-mas "Paste", id: 967805235
 mas "QQ", id: 451108668
 mas "QQ影音", id: 1467163328
 mas "QQ音乐", id: 595615424
@@ -126,5 +117,4 @@ mas "Xcode", id: 497799835
 mas "企业微信", id: 1189898970
 mas "微信", id: 836500024
 mas "截图", id: 1059334054
-mas "看图", id: 1314842898
 mas "腾讯视频", id: 1231336508

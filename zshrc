@@ -11,6 +11,7 @@ fi
 # oh-my-zsh start
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
+export ZSH_DISABLE_COMPFIX=true
 
 plugins=(
   common-aliases
@@ -66,8 +67,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 # oh-my-zsh end
 
-# zplugin start
-source $HOME/.zplugin/bin/zplugin.zsh
+# zinit start
+source $HOME/.zinit/bin/zinit.zsh
 
 ## theme
 
@@ -77,7 +78,6 @@ SPACESHIP_PROMPT_ORDER=(
   node
   golang
   docker
-  kubecontext
   exec_time
   jobs
   line_sep
@@ -97,18 +97,18 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_BATTERY_SHOW=always
 SPACESHIP_TIME_SHOW=true
 
-zplugin light denysdovhan/spaceship-prompt
+zinit light denysdovhan/spaceship-prompt
 ### spaceship end
 
 ## plugins
-zplugin light zdharma/history-search-multi-word
-zplugin light zdharma/fast-syntax-highlighting
-zplugin light zsh-users/zsh-autosuggestions
-zplugin light zsh-users/zsh-completions
-zplugin light zsh-users/zsh-history-substring-search
-zplugin ice atload"zpcdreplay" atclone'./zplug.zsh'
-zplugin light g-plane/zsh-yarn-autocompletions
-# zplugin end
+zinit light zdharma/history-search-multi-word
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-history-substring-search
+zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
+zinit light g-plane/zsh-yarn-autocompletions
+# zinit end
 
 # command-not-found
 if brew command command-not-found-init > /dev/null 2>&1

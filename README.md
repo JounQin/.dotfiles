@@ -43,9 +43,9 @@ Useful commands:
 
   _AND_ do not delete any of your app data, be careful!
 
-### Zplugin and Oh-My-Zsh
+### Zinit and Oh-My-Zsh
 
-[Zplugin](https://github.com/zdharma/zplugin) is a `Flexible Zsh plugin manager with clean fpath, reports, completion management, turbo mode, services`, and [Oh My Zsh](https://ohmyz.sh) is a `framework for managing your` [zsh](https://www.zsh.org) `configuration`,
+[Zinit](https://github.com/zdharma/zinit) is a `Flexible Zsh plugin manager with clean fpath, reports, completion management, turbo mode, services`, and [Oh My Zsh](https://ohmyz.sh) is a `framework for managing your` [zsh](https://www.zsh.org) `configuration`,
 they are used to make our terminal more beautiful and productive.
 
 I was always using official `apple` theme before I meet [spaceship](https://github.com/denysdovhan/spaceship-prompt).

@@ -25,17 +25,15 @@ setup_color() {
 
 setup_color
 
-echo "${RED}Homebrew, Zsh, Oh-My-Zsh, Zplugin and related apps and plugins will be installed automatically if not detected.${RESET}"
+echo "${RED}Homebrew, Zsh, Oh-My-Zsh, Zinit and related apps and plugins will be installed automatically if not detected.${RESET}"
 
 # check Homebrew installation
 if ! command_exists brew; then
 	echo "Installing Homebrew..."
-	if [[ "$OSTYPE" == "darwin"* ]]; then
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	else
-		sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-		test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-		test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	if [[ "$OSTYPE" != "darwin"* ]]; then
+		test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+		test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 		test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 		echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 		brew install zsh
@@ -48,10 +46,10 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-## check Zplugin installation
-if [ ! -d "$HOME/.zplugin" ]; then
-	echo "Installing Zplugin..."
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+## check Zinit installation
+if [ ! -d "$HOME/.zinit" ]; then
+	echo "Installing Zinit..."
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 fi
 
 if [ "true" == "$CI" ]; then
@@ -73,9 +71,9 @@ execBrewBundle() {
 	echo "Executing \`brew bundle\` to install packages and apps."
 	echo "${BLUE}It may take some time until finishing at the first time, please be a bit patience...${RESET}"
 	if [ "true" == "$CI" ]; then
-		export HOMEBREW_BUNDLE_TAP_SKIP="mathildetech/alauda"
+		export HOMEBREW_BUNDLE_TAP_SKIP="alauda/alauda"
 		if [[ "$OSTYPE" == "darwin"* ]]; then
-			export HOMEBREW_BUNDLE_BREW_SKIP="mathildetech/alauda/console-cli miderwong/flutter/flutter"
+			export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli miderwong/flutter/flutter"
 			export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
 		else
 			export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller ios-deploy libimobiledevice mas mathildetech/alauda/console-cli"
