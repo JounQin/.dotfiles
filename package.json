@@ -6,7 +6,14 @@
   "author": "JounQin <admin@1stg.me>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "postinstall": "yarn-deduplicate || exit 0"
+  },
   "devDependencies": {
-    "@1stg/lib-config": "^0.4.3"
+    "@1stg/lib-config": "^0.5.4",
+    "yarn-deduplicate": "^2.0.0"
+  },
+  "resolutions": {
+    "prettier": "^2.0.5"
   }
 }
