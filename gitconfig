@@ -10,7 +10,6 @@ email = admin@1stg.me
   attributesfile = ~/.gitattributes
   autocrlf = input
 	excludesfile = ~/.gitignore
-	gitproxy = "~/.gitproxy for github.com"
 	ignorecase = false
 [remote "origin"]
   prune = true

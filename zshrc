@@ -1,7 +1,7 @@
 # aliases
 alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
-alias proxy="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7891"
-alias unproxy="unset https_proxy;unset http_proxy;unset all_proxy"
+alias proxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7891"
+alias unproxy="unset https_proxy http_proxy all_proxy"
 
 # bash
 if [ -f $HOME/.bashrc ]
@@ -49,7 +49,6 @@ plugins=(
   ng
   node
   npm
-  npx
   osx
   please
   profiles
@@ -78,6 +77,7 @@ SPACESHIP_PROMPT_ORDER=(
   node
   golang
   docker
+  kubectl
   exec_time
   jobs
   line_sep
@@ -106,8 +106,8 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
-zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
-zinit light g-plane/zsh-yarn-autocompletions
+# zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
+# zinit light g-plane/zsh-yarn-autocompletions
 # zinit end
 
 # command-not-found
