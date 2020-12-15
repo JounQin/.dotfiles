@@ -36,8 +36,12 @@ if ! command_exists brew; then
     test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
     echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-    brew install zsh
   fi
+fi
+
+# check zsh installation
+if ! command_exists zsh; then
+  brew install zsh
 fi
 
 ## check Oh-My-Zsh installation
@@ -73,7 +77,7 @@ execBrewBundle() {
   if [ "true" == "$CI" ]; then
     export HOMEBREW_BUNDLE_TAP_SKIP="alauda/alauda"
     if [[ "$OSTYPE" == "darwin"* ]]; then
-      export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli miderwong/flutter/flutter"
+      export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli"
       export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
     else
       export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller ios-deploy libimobiledevice mas mathildetech/alauda/console-cli"
