@@ -4,8 +4,8 @@ alias proxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.
 alias unproxy="unset https_proxy http_proxy all_proxy"
 
 # bash
-if [ -f $HOME/.bashrc ]
-then source $HOME/.bashrc
+if [ -f $HOME/.bashrc ]; then
+  source $HOME/.bashrc
 fi
 
 # oh-my-zsh start
@@ -106,13 +106,13 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
-# zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
-# zinit light g-plane/zsh-yarn-autocompletions
+zinit ice atload"zpcdreplay" atclone'./zplug.zsh' atpull"%atclone"
+zinit light g-plane/zsh-yarn-autocompletions
 # zinit end
 
 # command-not-found
-if brew command command-not-found-init > /dev/null 2>&1
-then eval $(brew command-not-found-init)
+if brew command command-not-found-init >/dev/null 2>&1; then
+  eval $(brew command-not-found-init)
 fi
 
 export BREW_PKG=/usr/local/opt
@@ -121,12 +121,12 @@ export BREW_PKG=/usr/local/opt
 export NVM_DIR=$HOME/.nvm
 export NVM_HOME=$BREW_PKG/nvm
 
-if [ -s $NVM_HOME/nvm.sh ]
-then source $NVM_HOME/nvm.sh
+if [ -s $NVM_HOME/nvm.sh ]; then
+  source $NVM_HOME/nvm.sh
 fi
 
-if [ -s $NVM_HOME/etc/bash_completion.d/nvm ]
-then source $NVM_HOME/etc/bash_completion.d/nvm
+if [ -s $NVM_HOME/etc/bash_completion.d/nvm ]; then
+  source $NVM_HOME/etc/bash_completion.d/nvm
 fi
 
 # exports
@@ -144,6 +144,6 @@ export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
 export PATH=/usr/local/sbin:$FLUTTER_HOME/bin:$GOPATH/bin:$RUBY_HOME/bin:$PATH
 
 # local
-if [ -f $HOME/.zshrc.local ]
-then source $HOME/.zshrc.local
+if [ -f $HOME/.zshrc.local ]; then
+  source $HOME/.zshrc.local
 fi

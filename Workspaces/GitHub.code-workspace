@@ -5,6 +5,10 @@
       "path": "../.dotfiles"
     },
     {
+      "name": "appcenter",
+      "path": "GitHub/appcenter"
+    },
+    {
       "name": "babel-preset-proposal-typescript",
       "path": "GitHub/babel-preset-proposal-typescript"
     },
@@ -29,8 +33,8 @@
       "path": "GitHub/go-study"
     },
     {
-      "name": "Homebrew-X",
-      "path": "GitHub/Homebrew-X"
+      "name": "homebrew-x",
+      "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
     },
     {
       "name": "mdx",
@@ -71,9 +75,9 @@
     {
       "name": "vue",
       "path": "GitHub/vue"
+    },
+    {
+      "path": "GitHub/graphql-schema"
     }
-  ],
-  "settings": {
-    "jira-plugin.workingProject": ""
-  }
+  ]
 }

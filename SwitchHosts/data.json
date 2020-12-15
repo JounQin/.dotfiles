@@ -10,6 +10,17 @@
     "refresh_interval": 0,
     "include": [],
     "children": []
+  }, {
+    "id": "1606368919917-595630",
+    "title": "arm",
+    "content": "# arm\n124.70.59.137 dr-arm.alauda.cn\n",
+    "on": true,
+    "where": "local",
+    "folder_mode": 0,
+    "last_refresh": null,
+    "refresh_interval": 0,
+    "include": [],
+    "children": []
   }],
-  "version": [3, 5, 4, 5517]
+  "version": [3, 5, 6, 5551]
 }

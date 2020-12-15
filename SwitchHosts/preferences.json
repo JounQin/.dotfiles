@@ -3,6 +3,7 @@
   "auto_launch": false,
   "choice_mode": "multiple",
   "hide_at_launch": false,
+  "user_language": "cn",
   "send_usage_data": true,
-  "user_language": "cn"
+  "theme": "dark"
 }
