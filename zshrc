@@ -133,7 +133,6 @@ fi
 export EDITOR=code
 export EFF_NO_LINK_RULES=true
 export HOMEBREW_BUNDLE_NO_LOCK=true
-export FLUTTER_HOME=$BREW_PKG/flutter
 export GOPATH=$HOME/go
 export RUBY_HOME=$BREW_PKG/ruby
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
@@ -141,7 +140,7 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export CPPFLAGS=-I$RUBY_HOME/include
 export LDFLAGS=-L$RUBY_HOME/lib
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
-export PATH=/usr/local/sbin:$FLUTTER_HOME/bin:$GOPATH/bin:$RUBY_HOME/bin:$PATH
+export PATH=/usr/local/sbin:$GOPATH/bin:$RUBY_HOME/bin:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]; then
