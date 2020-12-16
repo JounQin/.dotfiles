@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
@@ -41,6 +41,7 @@ fi
 
 # check zsh installation
 if ! command_exists zsh; then
+  echo "Installing Zsh..."
   brew install zsh
 fi
 
@@ -56,7 +57,7 @@ if [ ! -d "$HOME/.zinit" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 fi
 
-if [ "true" == "$CI" ]; then
+if [ "true" = "$CI" ]; then
   echo "${YELLOW}CI detected, copy zshrc automatically.${RESET}"
   \cp -f zshrc "$HOME/.zshrc"
 else
@@ -74,13 +75,14 @@ fi
 execBrewBundle() {
   echo "Executing \`brew bundle\` to install packages and apps."
   echo "${BLUE}It may take some time until finishing at the first time, please be a bit patience...${RESET}"
-  if [ "true" == "$CI" ]; then
+  if [ "true" = "$CI" ]; then
     export HOMEBREW_BUNDLE_TAP_SKIP="alauda/alauda"
     if [[ "$OSTYPE" == "darwin"* ]]; then
       export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli"
       export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
     else
-      export HOMEBREW_BUNDLE_BREW_SKIP="ideviceinstaller ios-deploy libimobiledevice mas mathildetech/alauda/console-cli"
+      # macOS is required for deno temporarily, tracking at https://github.com/Homebrew/linuxbrew-core/issues/21849
+      export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli deno mas"
     fi
   fi
   brew update
