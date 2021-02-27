@@ -10,13 +10,15 @@
     "postinstall": "yarn-deduplicate || exit 0"
   },
   "devDependencies": {
-    "@1stg/common-config": "^0.1.0",
+    "@1stg/common-config": "^1.2.8",
     "yarn-deduplicate": "^3.1.0"
   },
   "resolutions": {
     "prettier": "^2.2.1"
   },
   "commitlint": {
-    "extends": "@1stg"
+    "extends": [
+      "@1stg"
+    ]
   }
 }

@@ -29,28 +29,8 @@
       "path": "GitHub/eslint-mdx"
     },
     {
-      "name": "go-study",
-      "path": "GitHub/go-study"
-    },
-    {
       "name": "homebrew-x",
       "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
-    },
-    {
-      "name": "mdx",
-      "path": "GitHub/mdx"
-    },
-    {
-      "name": "ngrx",
-      "path": "GitHub/ngrx"
-    },
-    {
-      "name": "prettier",
-      "path": "GitHub/prettier"
-    },
-    {
-      "name": "prettier-plugins",
-      "path": "GitHub/prettier-plugins"
     },
     {
       "name": "pkgr",
@@ -59,10 +39,6 @@
     {
       "name": "react",
       "path": "GitHub/react"
-    },
-    {
-      "name": "react-hackernews",
-      "path": "GitHub/react-hackernews"
     },
     {
       "name": "rollup",
@@ -75,9 +51,6 @@
     {
       "name": "vue",
       "path": "GitHub/vue"
-    },
-    {
-      "path": "GitHub/graphql-schema"
     }
   ]
 }

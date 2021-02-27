@@ -1,6 +1,6 @@
 [user]
-name = JounQin
-email = admin@1stg.me
+	name = JounQin
+	email = admin@1stg.me
 	signingkey = 0BC0B62F2E603198
 [branch]
 	autosetuprebase = always
