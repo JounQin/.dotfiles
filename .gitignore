@@ -1,3 +1,4 @@
 *.log
 .zshrc.local
 node_modules
+Brewfile.lock.json

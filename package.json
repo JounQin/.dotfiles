@@ -7,10 +7,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "postinstall": "yarn-deduplicate || exit 0"
+    "postinstall": "yarn-deduplicate --strategy fewer || exit 0"
   },
   "devDependencies": {
-    "@1stg/common-config": "^1.2.8",
+    "@1stg/common-config": "^1.2.10",
     "yarn-deduplicate": "^3.1.0"
   },
   "resolutions": {
