@@ -29,6 +29,7 @@ plugins=(
   extract
   fd
   frontend-search
+  gh
   git
   git-auto-fetch
   git-extras
@@ -71,35 +72,6 @@ source $HOME/.zinit/bin/zinit.zsh
 
 ## theme
 
-### spaceship start
-SPACESHIP_PROMPT_ORDER=(
-  package
-  node
-  golang
-  docker
-  kubectl
-  exec_time
-  jobs
-  line_sep
-  dir
-  git
-  char
-)
-
-SPACESHIP_RPROMPT_ORDER=(
-  user
-  host
-  time
-  battery
-)
-
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_BATTERY_SHOW=always
-SPACESHIP_TIME_SHOW=true
-
-zinit light denysdovhan/spaceship-prompt
-### spaceship end
-
 ## plugins
 zinit light zdharma/history-search-multi-word
 zinit light zdharma/fast-syntax-highlighting
@@ -140,9 +112,14 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export CPPFLAGS=-I$RUBY_HOME/include
 export LDFLAGS=-L$RUBY_HOME/lib
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
+export STARSHIP_CONFIG=~/.starship/config.toml
 export PATH=/usr/local/sbin:$GOPATH/bin:$RUBY_HOME/bin:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]; then
   source $HOME/.zshrc.local
 fi
+
+### starship start
+eval "$(starship init zsh)"
+### starship end

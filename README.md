@@ -48,7 +48,7 @@ Useful commands:
 [Zinit](https://github.com/zdharma/zinit) is a `Flexible Zsh plugin manager with clean fpath, reports, completion management, turbo mode, services`, and [Oh My Zsh](https://ohmyz.sh) is a `framework for managing your` [zsh](https://www.zsh.org) `configuration`,
 they are used to make our terminal more beautiful and productive.
 
-I was always using official `apple` theme before I meet [spaceship](https://github.com/denysdovhan/spaceship-prompt).
+I was always using official `apple` theme before I meet [starship](https://github.com/starship/starship).
 
 Just change file `zshrc` if you want to modify the zsh plugins, theme, aliases or exports, etc.
 

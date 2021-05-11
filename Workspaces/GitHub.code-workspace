@@ -21,36 +21,59 @@
       "path": "GitHub/configs"
     },
     {
-      "name": "eslint-import-resolver-typescript",
-      "path": "GitHub/eslint-import-resolver-typescript"
-    },
-    {
       "name": "eslint-mdx",
       "path": "GitHub/eslint-mdx"
     },
     {
+      "name": "eslint-mdx-next",
+      "path": "GitHub/eslint-mdx-next"
+    },
+    {
       "name": "homebrew-x",
-      "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
+      "path": "../../../usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
     },
     {
       "name": "pkgr",
       "path": "GitHub/pkgr"
     },
     {
-      "name": "react",
-      "path": "GitHub/react"
-    },
-    {
-      "name": "rollup",
-      "path": "GitHub/rollup"
+      "name": "prettier",
+      "path": "GitHub/prettier"
     },
     {
       "name": "types",
       "path": "GitHub/types"
     },
     {
-      "name": "vue",
-      "path": "GitHub/vue"
+      "name": "vscode-mdx",
+      "path": "GitHub/vscode-mdx"
+    },
+    {
+      "name": "mdx",
+      "path": "GitHub/mdx"
+    },
+    {
+      "name": "eslint",
+      "path": "GitHub/eslint"
+    },
+    {
+      "name": "synckit",
+      "path": "GitHub/synckit"
+    },
+    {
+      "name": "markuplint-sync",
+      "path": "GitHub/markuplint-sync"
+    },
+    {
+      "name": "markuplint",
+      "path": "GitHub/markuplint"
+    },
+    {
+      "path": "GitHub/tslint-config-eslint"
     }
-  ]
+  ],
+  "settings": {
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  }
 }
