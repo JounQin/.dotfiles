@@ -71,6 +71,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zinit/bin/zinit.zsh
 
 ## theme
+eval "$(starship init zsh)"
 
 ## plugins
 zinit light zdharma/history-search-multi-word
@@ -83,11 +84,11 @@ zinit light g-plane/zsh-yarn-autocompletions
 # zinit end
 
 # command-not-found
-if brew command command-not-found-init >/dev/null 2>&1; then
+if brew command command-not-found-init > /dev/null 2>&1; then
   eval $(brew command-not-found-init)
 fi
 
-export BREW_PKG=/usr/local/opt
+export BREW_PKG=$(brew --prefix)/opt
 
 # nvm
 export NVM_DIR=$HOME/.nvm
@@ -119,7 +120,3 @@ export PATH=/usr/local/sbin:$GOPATH/bin:$RUBY_HOME/bin:$PATH
 if [ -f $HOME/.zshrc.local ]; then
   source $HOME/.zshrc.local
 fi
-
-### starship start
-eval "$(starship init zsh)"
-### starship end

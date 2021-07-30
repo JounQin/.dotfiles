@@ -3,7 +3,7 @@
 set -e
 
 command_exists() {
-  command -v "$@" >/dev/null 2>&1
+  command -v "$@" > /dev/null 2>&1
 }
 
 setup_color() {
@@ -34,8 +34,8 @@ if ! command_exists brew; then
   if [[ "$OSTYPE" != "darwin"* ]]; then
     test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
     test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-    test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
-    echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+    test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >> ~/.bash_profile
+    echo "eval \$($(brew --prefix)/bin/brew shellenv)" >> ~/.profile
   fi
 fi
 
@@ -98,7 +98,7 @@ execBrewBundle || {
 }
 
 echo "Setting up rcm..."
-rcup brew-aliases startup SwitchHosts gitconfig gitignore gitproxy zshrc
+rcup brew-aliases startup SwitchHosts gitconfig gitignore zshrc
 
 echo "Symlinking VSCode workspaces..."
 WORKSPACE_SRC=~/.dotfiles/Workspaces

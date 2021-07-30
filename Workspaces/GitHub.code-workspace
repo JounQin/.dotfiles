@@ -21,40 +21,20 @@
       "path": "GitHub/configs"
     },
     {
-      "name": "eslint-mdx",
-      "path": "GitHub/eslint-mdx"
-    },
-    {
-      "name": "eslint-mdx-next",
-      "path": "GitHub/eslint-mdx-next"
-    },
-    {
-      "name": "homebrew-x",
-      "path": "../../../usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
-    },
-    {
-      "name": "pkgr",
-      "path": "GitHub/pkgr"
-    },
-    {
-      "name": "prettier",
-      "path": "GitHub/prettier"
-    },
-    {
-      "name": "types",
-      "path": "GitHub/types"
-    },
-    {
-      "name": "vscode-mdx",
-      "path": "GitHub/vscode-mdx"
-    },
-    {
-      "name": "mdx",
-      "path": "GitHub/mdx"
+      "name": "esbuilder",
+      "path": "GitHub/esbuilder"
     },
     {
       "name": "eslint",
       "path": "GitHub/eslint"
+    },
+    {
+      "name": "homebrew-x",
+      "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
+    },
+    {
+      "name": "pkgr",
+      "path": "GitHub/pkgr"
     },
     {
       "name": "synckit",
@@ -65,11 +45,16 @@
       "path": "GitHub/markuplint-sync"
     },
     {
-      "name": "markuplint",
-      "path": "GitHub/markuplint"
+      "name": "prettier",
+      "path": "GitHub/prettier"
     },
     {
-      "path": "GitHub/tslint-config-eslint"
+      "name": "eslint-mdx",
+      "path": "GitHub/eslint-mdx"
+    },
+    {
+      "name": "vscode-mdx",
+      "path": "GitHub/vscode-mdx"
     }
   ],
   "settings": {
