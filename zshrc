@@ -22,7 +22,6 @@ plugins=(
   docker
   docker-compose
   docker-machine
-  dotenv
   emoji
   emotty
   encode64
@@ -61,7 +60,6 @@ plugins=(
   yarn
   z
   zsh-navigation-tools
-  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh

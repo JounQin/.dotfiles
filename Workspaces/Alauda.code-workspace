@@ -5,10 +5,6 @@
       "path": "Alauda/alauda-code-editor"
     },
     {
-      "name": "alauda-common-snippet",
-      "path": "Alauda/alauda-common-snippet"
-    },
-    {
       "name": "alauda-ui",
       "path": "Alauda/alauda-ui"
     },
@@ -18,31 +14,19 @@
     },
     {
       "name": "homebrew-alauda",
-      "path": "/usr/local/Homebrew/Library/Taps/alauda/homebrew-alauda"
-    },
-    {
-      "name": "icarus",
-      "path": "Alauda/icarus"
-    },
-    {
-      "name": "underlord",
-      "path": "Alauda/underlord"
+      "path": "../../../usr/local/Homebrew/Library/Taps/alauda/homebrew-alauda"
     },
     {
       "name": "vscode-snippets",
       "path": "Alauda/vscode-snippets"
     },
     {
-      "name": "ng-monaco-editor",
-      "path": "Alauda/ng-monaco-editor"
+      "name": "changesets-gitlab",
+      "path": "Alauda/changesets-gitlab"
     },
     {
-      "name": "k8s-form-in-action",
-      "path": "Alauda/k8s-form-in-action"
-    },
-    {
-      "name": "ac-recorder",
-      "path": "Alauda/ac-recorder"
+      "name": "changesets-gitlab-test",
+      "path": "Alauda/changesets-gitlab-test"
     }
   ],
   "settings": {
@@ -163,7 +147,6 @@
       "controllerrevisions",
       "coreos",
       "cpaas",
-      "cpass",
       "crashcollector",
       "crds",
       "createerror",
@@ -323,6 +306,9 @@
       "operatorgroup",
       "operatorgroups",
       "osds",
+      "ɵcmp",
+      "ɵdir",
+      "ɵprov",
       "packagemanifest",
       "packagemanifests",
       "pageno",
@@ -425,6 +411,7 @@
       "tapps",
       "tdsql",
       "tdsqlsys",
+      "testlink",
       "testmanagementbinding",
       "testmanagementbindings",
       "testmanagementservice",
@@ -490,14 +477,12 @@
       "workloadproject",
       "worktile",
       "xtrabackup",
-      "xtradb",
-      "ɵcmp",
-      "ɵdir",
-      "ɵprov"
+      "xtradb"
     ],
     "deno.enable": false,
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "typescript.tsdk": "icarus/node_modules/typescript/lib"
+    "typescript.tsdk": "changesets-gitlab/node_modules/typescript/lib",
+    "liveServer.settings.multiRootWorkspaceName": "vision"
   }
 }

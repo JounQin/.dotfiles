@@ -41,24 +41,28 @@
       "path": "GitHub/synckit"
     },
     {
-      "name": "markuplint-sync",
-      "path": "GitHub/markuplint-sync"
+      "path": "GitHub/reuv"
     },
     {
-      "name": "prettier",
-      "path": "GitHub/prettier"
+      "path": "GitHub/typemod"
     },
     {
-      "name": "eslint-mdx",
+      "path": "GitHub/lib-boilerplate"
+    },
+    {
       "path": "GitHub/eslint-mdx"
     },
     {
-      "name": "vscode-mdx",
-      "path": "GitHub/vscode-mdx"
+      "path": "GitHub/cf2md"
+    },
+    {
+      "path": "GitHub/markuplint"
     }
   ],
   "settings": {
     "editor.snippetSuggestions": "bottom",
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "typescript.tsdk": "eslint-mdx/node_modules/typescript/lib",
+    "liveServer.settings.multiRootWorkspaceName": "markuplint"
   }
 }
