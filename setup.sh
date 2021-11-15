@@ -98,7 +98,7 @@ execBrewBundle || {
 }
 
 echo "Setting up rcm..."
-rcup brew-aliases startup SwitchHosts gitconfig gitignore zshrc
+rcup brew-aliases starship SwitchHosts gitconfig gitignore zshrc
 
 echo "Symlinking VSCode workspaces..."
 WORKSPACE_SRC=~/.dotfiles/Workspaces

@@ -14,7 +14,7 @@
     },
     {
       "name": "homebrew-alauda",
-      "path": "../../../usr/local/Homebrew/Library/Taps/alauda/homebrew-alauda"
+      "path": "/opt/Homebrew/Library/Taps/alauda/homebrew-alauda"
     },
     {
       "name": "vscode-snippets",
@@ -27,6 +27,12 @@
     {
       "name": "changesets-gitlab-test",
       "path": "Alauda/changesets-gitlab-test"
+    },
+    {
+      "path": "Alauda/icarus"
+    },
+    {
+      "path": "Alauda/diablo-clone"
     }
   ],
   "settings": {
@@ -482,7 +488,6 @@
     "deno.enable": false,
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "typescript.tsdk": "changesets-gitlab/node_modules/typescript/lib",
     "liveServer.settings.multiRootWorkspaceName": "vision"
   }
 }

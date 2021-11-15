@@ -30,7 +30,7 @@
     },
     {
       "name": "homebrew-x",
-      "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
+      "path": "/opt/Homebrew/Library/Taps/homebrew-x/homebrew-x"
     },
     {
       "name": "pkgr",
@@ -62,7 +62,6 @@
   "settings": {
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "typescript.tsdk": "eslint-mdx/node_modules/typescript/lib",
     "liveServer.settings.multiRootWorkspaceName": "markuplint"
   }
 }

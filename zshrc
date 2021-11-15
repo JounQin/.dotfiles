@@ -44,12 +44,12 @@ plugins=(
   jira
   jsontools
   kubectl
+  macos
   magic-enter
   man
   ng
   node
   npm
-  osx
   please
   profiles
   safe-paste

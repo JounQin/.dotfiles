@@ -1,16 +1,16 @@
 [user]
-	name = JounQin
-	email = admin@1stg.me
-	signingkey = 0BC0B62F2E603198
+  name = JounQin
+  email = admin@1stg.me
+  signingkey = 0BC0B62F2E603198
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [commit]
-	gpgsign = true
+  gpgsign = true
 [core]
   attributesfile = ~/.gitattributes
   autocrlf = input
-	excludesfile = ~/.gitignore
-	ignorecase = false
+  excludesfile = ~/.gitignore
+  ignorecase = false
 [remote "origin"]
   prune = true
 [tag]
