@@ -66,19 +66,24 @@ source $ZSH/oh-my-zsh.sh
 # oh-my-zsh end
 
 # zinit start
-source $HOME/.zinit/bin/zinit.zsh
+source $HOME/.local/share/zinit/zinit.git/zinit.zsh
 
 ## theme
 eval "$(starship init zsh)"
 
 ## plugins
-zinit light zdharma/history-search-multi-word
-zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/history-search-multi-word
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
 zinit ice atload"zpcdreplay" atclone'./zplug.zsh' atpull"%atclone"
 zinit light g-plane/zsh-yarn-autocompletions
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
 # zinit end
 
 # command-not-found

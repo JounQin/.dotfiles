@@ -52,9 +52,9 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 ## check Zinit installation
-if [ ! -d "$HOME/.zinit" ]; then
+if [ ! -d "$HOME/.local/share/zinit" ]; then
   echo "Installing Zinit..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 fi
 
 if [ "true" = "$CI" ]; then
@@ -105,8 +105,6 @@ WORKSPACE_SRC=~/.dotfiles/Workspaces
 WORKSPACE_DEST=~/Workspaces
 ln -sf $WORKSPACE_SRC/Alauda.code-workspace $WORKSPACE_DEST
 ln -sf $WORKSPACE_SRC/GitHub.code-workspace $WORKSPACE_DEST
-ln -sf $WORKSPACE_SRC/Outsourcing.code-workspace $WORKSPACE_DEST
-ln -sf $WORKSPACE_SRC/ufc.code-workspace $WORKSPACE_DEST
 
 echo -e "${GREEN}\xf0\x9f\x8e\x89 Congratulations, you have finished setting up!${RESET}"
 
