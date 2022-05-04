@@ -1,5 +1,6 @@
 add_newline = false
 format = """
+$hostname\
 $kubernetes\
 $docker_context\
 $package\
@@ -44,7 +45,6 @@ $cmd_duration\
 $line_break\
  \
 $username\
-$hostname\
 $shlvl\
 $directory\
 $vcsh\
@@ -61,3 +61,6 @@ $time\
 $status\
 $shell\
 $character"""
+
+[hostname]
+format = "on [$hostname]($style) "
