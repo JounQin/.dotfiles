@@ -5,18 +5,6 @@
       "path": "../.dotfiles"
     },
     {
-      "name": "appcenter",
-      "path": "GitHub/appcenter"
-    },
-    {
-      "name": "babel-preset-proposal-typescript",
-      "path": "GitHub/babel-preset-proposal-typescript"
-    },
-    {
-      "name": "blog",
-      "path": "GitHub/blog"
-    },
-    {
       "name": "configs",
       "path": "GitHub/configs"
     },
@@ -29,10 +17,6 @@
       "path": "GitHub/eslint"
     },
     {
-      "name": "homebrew-x",
-      "path": "/opt/Homebrew/Library/Taps/homebrew-x/homebrew-x"
-    },
-    {
       "name": "pkgr",
       "path": "GitHub/pkgr"
     },
@@ -41,22 +25,40 @@
       "path": "GitHub/synckit"
     },
     {
+      "name": "reuv",
       "path": "GitHub/reuv"
     },
     {
-      "path": "GitHub/typemod"
-    },
-    {
+      "name": "lib-boilerplate",
       "path": "GitHub/lib-boilerplate"
     },
     {
+      "name": "eslint-mdx",
       "path": "GitHub/eslint-mdx"
     },
     {
-      "path": "GitHub/cf2md"
+      "name": "markuplint",
+      "path": "GitHub/markuplint"
     },
     {
-      "path": "GitHub/markuplint"
+      "name": "prettier",
+      "path": "GitHub/prettier"
+    },
+    {
+      "name": "react",
+      "path": "GitHub/react"
+    },
+    {
+      "path": "GitHub/sh-syntax"
+    },
+    {
+      "path": "GitHub/changesets-gitlab"
+    },
+    {
+      "path": "GitHub/appcenter"
+    },
+    {
+      "path": "GitHub/chart-ol"
     }
   ],
   "settings": {

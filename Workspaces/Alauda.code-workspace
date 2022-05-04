@@ -21,18 +21,16 @@
       "path": "Alauda/vscode-snippets"
     },
     {
-      "name": "changesets-gitlab",
-      "path": "Alauda/changesets-gitlab"
-    },
-    {
-      "name": "changesets-gitlab-test",
-      "path": "Alauda/changesets-gitlab-test"
-    },
-    {
       "path": "Alauda/icarus"
     },
     {
       "path": "Alauda/diablo-clone"
+    },
+    {
+      "path": "Alauda/k8s-form-in-action"
+    },
+    {
+      "path": "Alauda/ng-monaco-editor"
     }
   ],
   "settings": {
@@ -488,6 +486,7 @@
     "deno.enable": false,
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "liveServer.settings.multiRootWorkspaceName": "vision"
+    "liveServer.settings.multiRootWorkspaceName": "vision",
+    "typescript.preferences.importModuleSpecifierEnding": "minimal" 
   }
 }
