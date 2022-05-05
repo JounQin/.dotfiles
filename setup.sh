@@ -54,7 +54,7 @@ fi
 ## check Zinit installation
 if [ ! -d "$HOME/.local/share/zinit" ]; then
   echo "Installing Zinit..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+  bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 fi
 
 if [ "true" = "$CI" ]; then
