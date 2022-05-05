@@ -13,6 +13,10 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_CACHE_DIR=$ZSH/cache
 export ZSH_DISABLE_COMPFIX=true
 
+DISABLE_UNTRACKED_FILES_DIRTY=true
+ENABLE_CORRECTION=true
+HYPHEN_INSENSITIVE=true
+
 plugins=(
   common-aliases
   command-not-found
@@ -75,18 +79,15 @@ source $HOME/.local/share/zinit/zinit.git/zinit.zsh
 eval "$(starship init zsh)"
 
 ## plugins
+zinit light b4b4r07/emoji-cli
+zinit light b4b4r07/enhancd
+zinit light chrissicool/zsh-256color
+zinit light MichaelAquilina/zsh-you-should-use
+zinit light paulirish/git-open
 zinit light zdharma-continuum/history-search-multi-word
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-history-substring-search
-zinit ice atload"zpcdreplay" atclone'./zplug.zsh' atpull"%atclone"
-zinit light g-plane/zsh-yarn-autocompletions
-zinit light-mode for \
-  zdharma-continuum/zinit-annex-as-monitor \
-  zdharma-continuum/zinit-annex-bin-gem-node \
-  zdharma-continuum/zinit-annex-patch-dl \
-  zdharma-continuum/zinit-annex-rust
 # zinit end
 
 # command-not-found
@@ -96,17 +97,14 @@ fi
 
 export BREW_PKG=$(brew --prefix)/opt
 
-# nvm
-export NVM_DIR=$HOME/.nvm
-export NVM_HOME=$BREW_PKG/nvm
+# fnm
+export FNM_HOME=$BREW_PKG/fnm
 
-if [ -s $NVM_HOME/nvm.sh ]; then
-  source $NVM_HOME/nvm.sh
+if [ -s $FNM_HOME/etc/bash_completion.d/fnm ]; then
+  source $FNM_HOME/etc/bash_completion.d/fnm
 fi
 
-if [ -s $NVM_HOME/etc/bash_completion.d/nvm ]; then
-  source $NVM_HOME/etc/bash_completion.d/nvm
-fi
+eval "$(fnm env --use-on-cd)"
 
 # rust
 if [ -d "$HOME/.cargo" ]; then
@@ -128,12 +126,7 @@ export RUBY_HOME=$BREW_PKG/ruby
 export CPPFLAGS=-I$RUBY_HOME/include
 export LDFLAGS=-L$RUBY_HOME/lib
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
-export PATH=/usr/local/sbin:$DENO_HOME/bin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
-
-# bash
-if [ -f $HOME/.bashrc ]; then
-  source $HOME/.bashrc
-fi
+export PATH=$DENO_HOME/bin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]; then

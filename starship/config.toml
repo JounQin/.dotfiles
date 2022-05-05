@@ -60,7 +60,8 @@ $battery\
 $time\
 $status\
 $shell\
-$character"""
+$character
+"""
 
 [hostname]
 format = "on [$hostname]($style) "
