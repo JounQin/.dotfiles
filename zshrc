@@ -111,8 +111,13 @@ if [ -d "$HOME/.cargo" ]; then
   source $HOME/.cargo/env
 fi
 
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR=vim
+else
+  export EDITOR=code
+fi
+
 # exports
-export EDITOR=code
 export EFF_NO_LINK_RULES=true
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export HOMEBREW_BUNDLE_NO_LOCK=true
