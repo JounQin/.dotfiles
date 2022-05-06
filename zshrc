@@ -83,6 +83,7 @@ zinit light b4b4r07/emoji-cli
 zinit light b4b4r07/enhancd
 zinit light chrissicool/zsh-256color
 zinit light MichaelAquilina/zsh-you-should-use
+zinit light ntnyq/omz-plugin-pnpm
 zinit light paulirish/git-open
 zinit light zdharma-continuum/history-search-multi-word
 zinit light zdharma-continuum/fast-syntax-highlighting
