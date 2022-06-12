@@ -43,6 +43,7 @@ plugins=(
   github
   gitignore
   golang
+  heroku
   history
   history-substring-search
   iterm2
