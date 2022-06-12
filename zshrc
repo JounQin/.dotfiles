@@ -127,12 +127,14 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export STARSHIP_CONFIG=~/.starship/config.toml
 export DENO_HOME=$HOME/.deno
 export GOPATH=$HOME/go
+export HOMEBREW_TEMP=$HOME/tmp
 export KREW_ROOT=$HOME/.krew
 export KUBECONFIG=$HOME/.kube/config
 export RUBY_HOME=$BREW_PKG/ruby
 export CPPFLAGS=-I$RUBY_HOME/include
 export LDFLAGS=-L$RUBY_HOME/lib
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
+export TMPDIR=$HOME/tmp
 export PATH=$DENO_HOME/bin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
 
 # local

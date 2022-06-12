@@ -11,6 +11,8 @@
   autocrlf = input
   excludesfile = ~/.gitignore
   ignorecase = false
+[init]
+	defaultBranch = main
 [remote "origin"]
   prune = true
 [tag]
