@@ -1,6 +1,6 @@
 # .dotfiles [![GitHub Actions](https://github.com/JounQin/.dotfiles/workflows/ci/badge.svg)](https://github.com/JounQin/.dotfiles/actions?query=workflow%3A%22ci%22)
 
-Personal but sharable .dotfiles managed by `rcm`.
+Personal but sharable .dotfiles managed by `rcm`
 
 ## Usage
 
@@ -63,3 +63,23 @@ All of the available plugins are included by default.
 
 [SwitchHosts](https://oldj.github.io/SwitchHosts) is used for helping you to `Switch hosts quickly!`
 I just accidentally meet it in recent days, and I used [iHost](https://toolinbox.net/iHosts) before, but it is not so powerful if you don't want to pay for it.
+
+## Sponsors
+
+| 1stG                                                                                                                               | RxTS                                                                                                                               | UnTS                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers and sponsors](https://opencollective.com/1stG/organizations.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers and sponsors](https://opencollective.com/rxts/organizations.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers and sponsors](https://opencollective.com/unts/organizations.svg)](https://opencollective.com/unts) |
+
+## Backers
+
+| 1stG                                                                                                                             | RxTS                                                                                                                             | UnTS                                                                                                                             |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers and sponsors](https://opencollective.com/1stG/individuals.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers and sponsors](https://opencollective.com/rxts/individuals.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers and sponsors](https://opencollective.com/unts/individuals.svg)](https://opencollective.com/unts) |
+
+## License
+
+[MIT][] © [JounQin][]@[1stG.me][]
+
+[1stg.me]: https://www.1stg.me
+[jounqin]: https://GitHub.com/JounQin
+[mit]: http://opensource.org/licenses/MIT

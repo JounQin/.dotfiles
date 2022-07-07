@@ -1,2 +1,5 @@
-yarn.lock -diff
+* text=auto eol=lf
+.pnp.* -diff
 npm-lock.json -diff
+pnpm-lock.yaml -diff
+yarn.lock -diff

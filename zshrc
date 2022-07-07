@@ -92,6 +92,11 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 # zinit end
 
+# bun
+if [ -s "$HOME/.bun/_bun" ]; then
+  source "$HOME/.bun/_bun"
+fi
+
 # command-not-found
 if brew command command-not-found-init > /dev/null 2>&1; then
   eval $(brew command-not-found-init)
@@ -125,6 +130,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export STARSHIP_CONFIG=~/.starship/config.toml
+export BUN_INSTALL=$HOME/.bun
 export DENO_HOME=$HOME/.deno
 export GOPATH=$HOME/go
 export HOMEBREW_TEMP=$HOME/tmp
@@ -135,7 +141,7 @@ export CPPFLAGS=-I$RUBY_HOME/include
 export LDFLAGS=-L$RUBY_HOME/lib
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
 export TMPDIR=$HOME/tmp
-export PATH=$DENO_HOME/bin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
+export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]; then

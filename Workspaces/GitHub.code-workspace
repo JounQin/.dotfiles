@@ -59,6 +59,15 @@
     },
     {
       "path": "GitHub/chart-ol"
+    },
+    {
+      "path": "GitHub/mdx"
+    },
+    {
+      "path": "GitHub/eslint-import-resolver-typescript"
+    },
+    {
+      "path": "GitHub/eslint-plugin-prettier"
     }
   ],
   "settings": {

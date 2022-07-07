@@ -12,12 +12,13 @@
 .DS_Store
 .idea
 .next
-.pnp.*
 .project
 .type-coverage
 .vercel
 .vscode
 .yarn
+!.pnp.*
+!.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
