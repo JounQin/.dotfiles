@@ -30,6 +30,18 @@ echo "${RED}Homebrew, Zsh, Oh-My-Zsh, Zinit and related apps and plugins will be
 # check Homebrew installation
 if ! command_exists brew; then
   echo "Installing Homebrew..."
+  if [[ "$OSTYPE" != "darwin"* ]]; then
+    if [ ! -f /usr/bin/ldd ]; then
+      if [ -f /opt/bin/ldd ]; then
+        echo "Linking $(ldd) for $(linuxbrew)..."
+        sudo ln /opt/bin/ldd /usr/bin/ldd
+        # sudo chown 1026:100 -R /etc/os-release
+      else
+        echo "${RED}No $(ldd) binary found which is required by $(linuxbrew), please install it manually first and try again later...${RESET}"
+        exit 1
+      fi
+    fi
+  fi
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   if [[ "$OSTYPE" != "darwin"* ]]; then
     test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
@@ -76,13 +88,11 @@ execBrewBundle() {
   echo "Executing \`brew bundle\` to install packages and apps."
   echo "${BLUE}It may take some time until finishing at the first time, please be a bit patience...${RESET}"
   if [ "true" = "$CI" ]; then
-    export HOMEBREW_BUNDLE_TAP_SKIP="alauda/alauda"
     if [[ "$OSTYPE" == "darwin"* ]]; then
-      export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli"
       export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
     else
       # macOS is required for deno temporarily, tracking at https://github.com/Homebrew/linuxbrew-core/issues/21849
-      export HOMEBREW_BUNDLE_BREW_SKIP="alauda/alauda/console-cli deno mas"
+      export HOMEBREW_BUNDLE_BREW_SKIP="deno mas"
     fi
   fi
   brew update

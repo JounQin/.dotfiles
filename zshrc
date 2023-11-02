@@ -3,6 +3,14 @@ if [ -d "$HOME/.fig" ]; then
   source "$HOME/.fig/shell/zshrc.pre.zsh"
 fi
 
+command_exists() {
+  command -v "$@" > /dev/null 2>&1
+}
+
+if ! command_exists brew; then
+  test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
+
 # aliases
 alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
 alias proxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
@@ -136,12 +144,13 @@ export GOPATH=$HOME/go
 export HOMEBREW_TEMP=$HOME/tmp
 export KREW_ROOT=$HOME/.krew
 export KUBECONFIG=$HOME/.kube/config
+export GLIBC_HOME=$BREW_PKG/glibc
 export RUBY_HOME=$BREW_PKG/ruby
-export CPPFLAGS=-I$RUBY_HOME/include
-export LDFLAGS=-L$RUBY_HOME/lib
+export CPPFLAGS="-I$GLIBC_HOME/include -I$RUBY_HOME/include"
+export LDFLAGS="-L$GLIBC_HOME/lib -L$RUBY_HOME/lib"
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
 export TMPDIR=$HOME/tmp
-export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
+export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GLIBC_HOME/bin:$GLIBC_HOME/sbin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]; then
