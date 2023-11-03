@@ -17,3 +17,5 @@
   prune = true
 [tag]
   gpgsign = true
+[safe]
+	directory = .
