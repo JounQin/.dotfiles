@@ -1,4 +1,6 @@
 *.log
+.yarn/*
+!.yarn/plugins
 .zshrc.local
 node_modules
 Brewfile.lock.json

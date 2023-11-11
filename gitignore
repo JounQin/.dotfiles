@@ -16,7 +16,7 @@
 .type-coverage
 .vercel
 .vscode
-.yarn
+.yarn/*
 !.pnp.*
 !.yarn/patches
 !.yarn/plugins
