@@ -1,7 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-if [ -d "$HOME/.fig" ]; then
-  source "$HOME/.fig/shell/zshrc.pre.zsh"
-fi
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 
 command_exists() {
   command -v "$@" > /dev/null 2>&1
@@ -13,6 +11,7 @@ fi
 
 # aliases
 alias flush_dns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+alias nvm=fnm
 alias proxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 alias unproxy="unset https_proxy http_proxy all_proxy"
 
@@ -89,7 +88,7 @@ eval "$(starship init zsh)"
 
 ## plugins
 zinit light b4b4r07/emoji-cli
-zinit light b4b4r07/enhancd
+# zinit light b4b4r07/enhancd
 zinit light chrissicool/zsh-256color
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light ntnyq/omz-plugin-pnpm
@@ -126,6 +125,11 @@ if [ -d "$HOME/.cargo" ]; then
   source $HOME/.cargo/env
 fi
 
+# bun completions
+if [ -s "$HOME/.bun/_bun" ]; then
+  source "$HOME/.bun/_bun"
+fi
+
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR=vim
 else
@@ -137,10 +141,11 @@ export EFF_NO_LINK_RULES=true
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export STARSHIP_CONFIG=~/.starship/config.toml
+export STARSHIP_CONFIG=$HOME/.starship/config.toml
 export BUN_INSTALL=$HOME/.bun
 export DENO_HOME=$HOME/.deno
 export GOPATH=$HOME/go
+export GOROOT=$(go env GOROOT)
 export HOMEBREW_TEMP=$HOME/tmp
 export KREW_ROOT=$HOME/.krew
 export KUBECONFIG=$HOME/.kube/config
@@ -149,8 +154,9 @@ export RUBY_HOME=$BREW_PKG/ruby
 export CPPFLAGS="-I$GLIBC_HOME/include -I$RUBY_HOME/include"
 export LDFLAGS="-L$GLIBC_HOME/lib -L$RUBY_HOME/lib"
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
+export PNPM_HOME=$HOME/Library/pnpm
 export TMPDIR=$HOME/tmp
-export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GLIBC_HOME/bin:$GLIBC_HOME/sbin:$GOPATH/bin:$KREW_ROOT/bin:$RUBY_HOME/bin:$PATH
+export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GLIBC_HOME/bin:$GLIBC_HOME/sbin:$GOPATH/bin:$GOROOT/misc/wasm:$KREW_ROOT/bin:$RUBY_HOME/bin:$PNPM_HOME:$PATH
 
 # local
 if [ -f $HOME/.zshrc.local ]; then
@@ -158,6 +164,4 @@ if [ -f $HOME/.zshrc.local ]; then
 fi
 
 # Fig post block. Keep at the bottom of this file.
-if [ -d "$HOME/.fig" ]; then
-  source "$HOME/.fig/shell/zshrc.post.zsh"
-fi
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

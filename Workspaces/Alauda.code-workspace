@@ -1,36 +1,22 @@
 {
   "folders": [
     {
-      "name": "alauda-code-editor",
       "path": "Alauda/alauda-code-editor"
     },
     {
-      "name": "alauda-ui",
-      "path": "Alauda/alauda-ui"
-    },
-    {
-      "name": "custom-webpack",
       "path": "Alauda/custom-webpack"
     },
     {
-      "name": "homebrew-alauda",
-      "path": "/opt/Homebrew/Library/Taps/alauda/homebrew-alauda"
-    },
-    {
-      "name": "vscode-snippets",
       "path": "Alauda/vscode-snippets"
-    },
-    {
-      "path": "Alauda/icarus"
-    },
-    {
-      "path": "Alauda/diablo-clone"
     },
     {
       "path": "Alauda/k8s-form-in-action"
     },
     {
       "path": "Alauda/ng-monaco-editor"
+    },
+    {
+      "path": "Alauda/ui"
     }
   ],
   "settings": {
@@ -483,10 +469,6 @@
       "xtrabackup",
       "xtradb"
     ],
-    "deno.enable": false,
-    "editor.snippetSuggestions": "bottom",
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "liveServer.settings.multiRootWorkspaceName": "vision",
-    "typescript.preferences.importModuleSpecifierEnding": "minimal" 
+    "typescript.preferences.importModuleSpecifierEnding": "minimal"
   }
 }

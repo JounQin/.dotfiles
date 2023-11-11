@@ -1,78 +1,11 @@
 {
   "folders": [
     {
-      "name": ".dotfiles",
       "path": "../.dotfiles"
     },
     {
-      "name": "configs",
-      "path": "GitHub/configs"
-    },
-    {
-      "name": "esbuilder",
-      "path": "GitHub/esbuilder"
-    },
-    {
-      "name": "eslint",
-      "path": "GitHub/eslint"
-    },
-    {
-      "name": "pkgr",
-      "path": "GitHub/pkgr"
-    },
-    {
-      "name": "synckit",
-      "path": "GitHub/synckit"
-    },
-    {
-      "name": "reuv",
-      "path": "GitHub/reuv"
-    },
-    {
-      "name": "lib-boilerplate",
-      "path": "GitHub/lib-boilerplate"
-    },
-    {
-      "name": "eslint-mdx",
-      "path": "GitHub/eslint-mdx"
-    },
-    {
-      "name": "markuplint",
-      "path": "GitHub/markuplint"
-    },
-    {
-      "name": "prettier",
-      "path": "GitHub/prettier"
-    },
-    {
-      "name": "react",
-      "path": "GitHub/react"
-    },
-    {
-      "path": "GitHub/sh-syntax"
-    },
-    {
-      "path": "GitHub/changesets-gitlab"
-    },
-    {
-      "path": "GitHub/appcenter"
-    },
-    {
-      "path": "GitHub/chart-ol"
-    },
-    {
-      "path": "GitHub/mdx"
-    },
-    {
-      "path": "GitHub/eslint-import-resolver-typescript"
-    },
-    {
-      "path": "GitHub/eslint-plugin-prettier"
+      "path": "/opt/homebrew/Library/Taps/homebrew-x/homebrew-x"
     }
   ],
-  "settings": {
-    "editor.snippetSuggestions": "bottom",
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "liveServer.settings.multiRootWorkspaceName": "markuplint"
-  }
+  "settings": {}
 }
