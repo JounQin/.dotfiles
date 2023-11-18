@@ -91,7 +91,7 @@ execBrewBundle() {
     if [[ "$OSTYPE" == "darwin"* ]]; then
       # mochi-diffusion: This software does not run on macOS versions older than Ventura.
       # Error: Cask playcover-community-beta depends on hardware architecture being one of [{:type=>:arm, :bits=>64}], but you are running {:type=>:intel, :bits=>64}.
-      export HOMEBREW_BUNDLE_BREW_SKIP="mochi-diffusion playcover-community-beta"
+      export HOMEBREW_BUNDLE_CASK_SKIP="mochi-diffusion playcover-community-beta"
       export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
     else
       # macOS is required for deno temporarily, tracking at https://github.com/Homebrew/linuxbrew-core/issues/21849
