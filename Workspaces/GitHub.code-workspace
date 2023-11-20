@@ -1,10 +1,25 @@
 {
   "folders": [
     {
+      "name": ".dotfiles",
       "path": "../.dotfiles"
     },
     {
+      "name": "blog",
+      "path": "GitHub/blog"
+    },
+    {
+      "name": "homebrew-x",
       "path": "/opt/homebrew/Library/Taps/homebrew-x/homebrew-x"
+    },
+    {
+      "path": "GitHub/react-hackernews"
+    },
+    {
+      "path": "GitHub/react-server-renderer"
+    },
+    {
+      "path": "GitHub/changesets-gitlab"
     }
   ],
   "settings": {}

@@ -146,7 +146,7 @@ export BUN_INSTALL=$HOME/.bun
 export DENO_HOME=$HOME/.deno
 export GOPATH=$HOME/go
 export GOROOT=$(go env GOROOT)
-export HOMEBREW_TEMP=$HOME/tmp
+export HOMEBREW_TEMP=$HOME/.tmp
 export KREW_ROOT=$HOME/.krew
 export KUBECONFIG=$HOME/.kube/config
 export GLIBC_HOME=$BREW_PKG/glibc
@@ -155,7 +155,7 @@ export CPPFLAGS="-I$GLIBC_HOME/include -I$RUBY_HOME/include"
 export LDFLAGS="-L$GLIBC_HOME/lib -L$RUBY_HOME/lib"
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
 export PNPM_HOME=$HOME/Library/pnpm
-export TMPDIR=$HOME/tmp
+export TMPDIR=$HOME/.tmp
 export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GLIBC_HOME/bin:$GLIBC_HOME/sbin:$GOPATH/bin:$GOROOT/misc/wasm:$KREW_ROOT/bin:$RUBY_HOME/bin:$PNPM_HOME:$PATH
 
 # local
