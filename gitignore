@@ -11,6 +11,7 @@
 .classpath
 .DS_Store
 .fleet
+.history
 .idea
 .next
 .project
@@ -24,6 +25,7 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.pnp.*
 coverage
 dist
 lib

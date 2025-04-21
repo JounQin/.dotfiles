@@ -5,22 +5,57 @@
       "path": "../.dotfiles"
     },
     {
-      "name": "blog",
-      "path": "GitHub/blog"
-    },
-    {
       "name": "homebrew-x",
-      "path": "/opt/homebrew/Library/Taps/homebrew-x/homebrew-x"
+      "path": "/opt/homebrew/Library/Taps/homebrew-x/homebrew-x",
+      // "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
     },
     {
-      "path": "GitHub/react-hackernews"
+      "path": "GitHub/prettier"
     },
     {
-      "path": "GitHub/react-server-renderer"
+      "path": "GitHub/nolyfill"
+    },
+    {
+      "path": "GitHub/configs"
+    },
+    {
+      "path": "GitHub/pkgr"
+    },
+    {
+      "path": "GitHub/eslint-mdx"
+    },
+    {
+      "path": "GitHub/eslint-import-resolver-typescript"
+    },
+    {
+      "path": "GitHub/eslint-plugin-import-x"
+    },
+    {
+      "path": "GitHub/synckit"
+    },
+    {
+      "path": "GitHub/sh-syntax"
     },
     {
       "path": "GitHub/changesets-gitlab"
+    },
+    {
+      "path": "GitHub/changesets"
+    },
+    {
+      "path": "GitHub/deeplx"
+    },
+    {
+      "path": "GitHub/whatlang"
+    },
+    {
+      "path": "GitHub/unrs-resolver"
+    },
+    {
+      "path": "GitHub/prettier-eslint"
+    },
+    {
+      "path": "GitHub/napi-postinstall"
     }
-  ],
-  "settings": {}
+  ]
 }

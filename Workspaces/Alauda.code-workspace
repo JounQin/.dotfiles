@@ -1,25 +1,13 @@
 {
   "folders": [
     {
-      "path": "Alauda/alauda-code-editor"
+      "path": "Alauda/Avengers"
     },
     {
-      "path": "Alauda/custom-webpack"
+      "path": "Alauda/Doom"
     },
     {
-      "path": "Alauda/vscode-snippets"
-    },
-    {
-      "path": "Alauda/k8s-form-in-action"
-    },
-    {
-      "path": "Alauda/ng-monaco-editor"
-    },
-    {
-      "path": "Alauda/ui"
-    },
-    {
-      "path": "Alauda/vision"
+      "path": "Alauda/product-docs"
     }
   ],
   "settings": {

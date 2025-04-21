@@ -31,15 +31,9 @@ echo "${RED}Homebrew, Zsh, Oh-My-Zsh, Zinit and related apps and plugins will be
 if ! command_exists brew; then
   echo "Installing Homebrew..."
   if [[ "$OSTYPE" != "darwin"* ]]; then
-    if [ ! -f /usr/bin/ldd ]; then
-      if [ -f /opt/bin/ldd ]; then
-        echo "Linking $(ldd) for $(linuxbrew)..."
-        sudo ln /opt/bin/ldd /usr/bin/ldd
-        # sudo chown 1026:100 -R /etc/os-release
-      else
-        echo "${RED}No $(ldd) binary found which is required by $(linuxbrew), please install it manually first and try again later...${RESET}"
-        exit 1
-      fi
+    if [ ! -f /etc/os-release ]; then
+      sudo touch /etc/os-release
+      sudo chown 1026:100 -R /etc/os-release
     fi
   fi
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -87,15 +81,15 @@ fi
 execBrewBundle() {
   echo "Executing \`brew bundle\` to install packages and apps."
   echo "${BLUE}It may take some time until finishing at the first time, please be a bit patience...${RESET}"
-  if [ "true" = "$CI" ]; then
-    if [[ "$OSTYPE" == "darwin"* ]]; then
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    if [[ "$(uname -m)" == "x86_64" ]]; then
       # mochi-diffusion: This software does not run on macOS versions older than Ventura.
-      # Error: Cask playcover-community-beta depends on hardware architecture being one of [{:type=>:arm, :bits=>64}], but you are running {:type=>:intel, :bits=>64}.
-      export HOMEBREW_BUNDLE_CASK_SKIP="mochi-diffusion playcover-community-beta"
+      # Error: Cask playcover-community depends on hardware architecture being one of [{:type=>:arm, :bits=>64}], but you are running {:type=>:intel, :bits=>64}.
+      export HOMEBREW_BUNDLE_CASK_SKIP="mochi-diffusion playcover-community"
       export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
-    else
-      export HOMEBREW_BUNDLE_BREW_SKIP="mas"
     fi
+  else
+    export HOMEBREW_BUNDLE_BREW_SKIP="mas"
   fi
   brew update
   brew bundle

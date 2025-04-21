@@ -32,12 +32,10 @@ plugins=(
   dash
   docker
   docker-compose
-  docker-machine
   emoji
   emotty
   encode64
   extract
-  fd
   frontend-search
   gh
   git
@@ -121,7 +119,7 @@ fi
 eval "$(fnm env --use-on-cd)"
 
 # rust
-if [ -d "$HOME/.cargo" ]; then
+if [ -f "$HOME/.cargo/env" ]; then
   source $HOME/.cargo/env
 fi
 
@@ -143,6 +141,7 @@ export HOMEBREW_BUNDLE_NO_LOCK=true
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export STARSHIP_CONFIG=$HOME/.starship/config.toml
 export BUN_INSTALL=$HOME/.bun
+export CARGO_HOME=$HOME/.cargo
 export DENO_HOME=$HOME/.deno
 export GOPATH=$HOME/go
 export GOROOT=$(go env GOROOT)
@@ -154,9 +153,14 @@ export RUBY_HOME=$BREW_PKG/ruby
 export CPPFLAGS="-I$GLIBC_HOME/include -I$RUBY_HOME/include"
 export LDFLAGS="-L$GLIBC_HOME/lib -L$RUBY_HOME/lib"
 export PKG_CONFIG_PATH=$RUBY_HOME/lib/pkgconfig
+export MOONBIT_HOME=$HOME/.moon
 export PNPM_HOME=$HOME/Library/pnpm
 export TMPDIR=$HOME/.tmp
-export PATH=$BUN_INSTALL/bin:$DENO_HOME/bin:$GLIBC_HOME/bin:$GLIBC_HOME/sbin:$GOPATH/bin:$GOROOT/misc/wasm:$KREW_ROOT/bin:$RUBY_HOME/bin:$PNPM_HOME:$PATH
+export PATH=$BUN_INSTALL/bin:$CARGO_HOME/bin:$DENO_HOME/bin:$GLIBC_HOME/bin:$GLIBC_HOME/sbin:$GOPATH/bin:$GOROOT/misc/wasm:$KREW_ROOT/bin:$RUBY_HOME/bin:$PNPM_HOME:$MOONBIT_HOME/bin:$PATH
+
+export PLAYWRIGHT_DOWNLOAD_HOST=https://cdn.npmmirror.com/binaries/playwright
+export PUPPETEER_DOWNLOAD_BASE_URL=https://cdn.npmmirror.com/binaries/chrome-for-testing
+# export PUPPETEER_DOWNLOAD_HOST=https://cdn.npmmirror.com/binaries/chrome-for-testing
 
 # local
 if [ -f $HOME/.zshrc.local ]; then
