@@ -109,6 +109,7 @@ rcup brew-aliases starship SwitchHosts gitconfig gitignore zshrc
 echo "Symlinking VSCode workspaces..."
 WORKSPACE_SRC=~/.dotfiles/Workspaces
 WORKSPACE_DEST=~/Workspaces
+mkdir -p $WORKSPACE_DEST $WORKSPACE_DEST/Alauda $WORKSPACE_DEST/GitHub
 ln -sf $WORKSPACE_SRC/Alauda.code-workspace $WORKSPACE_DEST
 ln -sf $WORKSPACE_SRC/GitHub.code-workspace $WORKSPACE_DEST
 
