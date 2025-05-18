@@ -4,7 +4,10 @@
       "path": "Alauda/Avengers"
     },
     {
-      "path": "Alauda/Doom"
+      "path": "GitHub/doom"
+    },
+    {
+      "path": "Alauda/product-doc-guide"
     },
     {
       "path": "Alauda/product-docs"
@@ -45,6 +48,7 @@
       "archivelog",
       "archivelogs",
       "areaspline",
+      "artifactcleanupruns",
       "artifactlist",
       "artifactregistries",
       "artifactregistry",
@@ -396,6 +400,7 @@
       "testmanagementbinding",
       "testmanagementbindings",
       "testmanagementservice",
+      "testmodules",
       "testplans",
       "timatrix",
       "timatrixes",

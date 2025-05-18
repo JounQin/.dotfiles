@@ -1,19 +1,13 @@
 {
   "folders": [
     {
-      "name": ".dotfiles",
       "path": "../.dotfiles"
     },
     {
-      "name": "homebrew-x",
-      "path": "/opt/homebrew/Library/Taps/homebrew-x/homebrew-x",
-      // "path": "/usr/local/Homebrew/Library/Taps/homebrew-x/homebrew-x"
+      "path": "/opt/homebrew/Library/Taps/homebrew-x/homebrew-x"
     },
     {
       "path": "GitHub/prettier"
-    },
-    {
-      "path": "GitHub/nolyfill"
     },
     {
       "path": "GitHub/configs"
@@ -55,7 +49,19 @@
       "path": "GitHub/prettier-eslint"
     },
     {
+      "path": "GitHub/prettier-eslint-cli"
+    },
+    {
       "path": "GitHub/napi-postinstall"
+    },
+    {
+      "path": "GitHub/eslint-plugin-jsx-a11y-x"
+    },
+    {
+      "path": "GitHub/oxc-jest"
+    },
+    {
+      "path": "GitHub/lib-boilerplate"
     }
   ]
 }

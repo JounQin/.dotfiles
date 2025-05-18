@@ -89,7 +89,7 @@ execBrewBundle() {
       export HOMEBREW_BUNDLE_MAS_SKIP=$(grep "^mas.*id: \d*$" Brewfile | cut -d":" -f2 | paste -sd " " -)
     fi
   else
-    export HOMEBREW_BUNDLE_BREW_SKIP="mas"
+    export HOMEBREW_BUNDLE_BREW_SKIP="mas vscode"
   fi
   brew update
   brew bundle
